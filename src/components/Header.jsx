@@ -10,17 +10,17 @@ function Header(){
   return (
     <header>
     <div id="icon">
-    <Button><a href="#home"><HomeIcon  style={{color: 'white'}}/></a></Button>
-    <Button><a href="#profil"><AccountBoxIcon style={{color: 'white'}}/></a></Button>
-    <Button><a href="#formation"><SchoolIcon style={{color: 'white'}}/></a></Button>
- <Button> <a href="#competence"><LaptopIcon style={{color: 'white'}}/></a></Button>
- <Button><a href="#realisation"><VisibilityIcon style={{color: 'white'}}/></a></Button>
+    <Button><a href="#profil"><HomeIcon  style={{color: 'white'}}/></a></Button>
+    <Button><a href="#formation"><AccountBoxIcon style={{color: 'white'}}/></a></Button>
+    <Button><a href="#competence"><SchoolIcon style={{color: 'white'}}/></a></Button>
+ <Button> <a href="#realisation"><LaptopIcon style={{color: 'white'}}/></a></Button>
+ <Button><a href="#contact"><VisibilityIcon style={{color: 'white'}}/></a></Button>
  <Button><a href="#contact"><ContactMailIcon style={{color: 'white'}}/></a></Button>
    
 </div>
- <article id="title"><h3>Tiema Coulibaly</h3>
- <hr id="line"></hr>
-   <h5>Développeur web & web mobile</h5>
+ <article id="title"><h1>Tiema Coulibaly</h1>
+ <hr class="line"></hr>
+   <h3>Développeur web & web mobile</h3>
  </article>
 
     </header>
