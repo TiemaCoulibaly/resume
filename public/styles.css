@@ -3,18 +3,48 @@
 	margin: 0;
 	box-sizing: border-box;
 }
+:root {
+	--primaryColor: #c2e7d9;
+	--secondaryColor: #209cee;
+	--mainDark: #0f084b;
+	--mainWhite: #fff;
+	--mainGrey: #f1f2f6;
+	--mainTransition: all 0.3s ease-in-out;
+	--letterSpacing: 0.5rem;
+}
+#root {
+	background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+}
+h3 {
+	color: var(--secondaryColor);
+}
 /* Navbar with icons */
 #icon {
 	display: flex;
 	justify-content: space-between;
 }
+#icon a {
+	animation: bounce 5s ease-in-out infinite;
+	color: #fad02c;
+}
+@keyframes bounce {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.5);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
 /* Jumbotron with background image */
 header {
-	margin: auto -16px;
 	padding: 16px 32px;
-	background-image: url("./images/lucas1.jpg");
-	background-color: rgba(0, 0, 0, 0.6);
+	background-image: url("./images/laptop.jpg");
+	background-color: rgba(1, 1, 1, 1);
 	height: 50vh;
+
 	background-size: cover;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -34,107 +64,100 @@ header {
 }
 /* hr */
 .line {
-	border-top: 1px solid rgba(255, 255, 255, 0.726);
+	border-top: 2px solid #fad02c;
 	box-shadow: 2px 5px #00000010;
 	width: 250px;
-	margin-left: 40vw;
 }
+/* content divider */
+.content-divider {
+	height: 0.5rem;
+	background: linear-gradient(
+		to left,
+		var(--primaryColor),
+		#fad02c,
+		var(--secondaryColor),
+		var(--primaryColor)
+	);
+}
+/* end of content divider */
 
+/* title */
+.background-title {
+	background-color: var(--mainWhite);
+}
 /* Profil section */
-/*---------------*/
-/***** EFFECT *****/
-/*---------------*/
 
-figure.effect {
-	background: #22a39f;
-	color: #fff;
+#bandeau {
+	background-image: url("./images/laptop.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	height: 150px;
+	color: white;
+	font-size: 25px;
+}
+#espaceur {
+	height: 70px;
+}
+/* formation */
+section #formation {
+	background-color: var(--mainWhite);
+}
+#dateF {
+	color: var(--primaryColor);
 }
 
-figure.effect img {
-	width: -webkit-calc(100% + 20px);
-	width: calc(100% + 20px);
-	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-	transition: opacity 0.35s, transform 0.35s;
-	-webkit-transform: translate3d(-10px, 0, 0);
-	transform: translate3d(-10px, 0, 0);
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
+.ico {
+	font-size: 60px;
 }
+/*------realisation---------*/
+.realisation-container {
+	background: var(--secondaryColor);
+	border: 0.2rem solid #fad02c;
+	border-radius: 1rem;
 
-figure.effect:hover img {
-	opacity: 0.2;
-	-webkit-transform: translate3d(0, 0, 0);
-	transform: translate3d(0, 0, 0);
-}
-
-figure.effect figcaption {
-	text-align: left;
-}
-
-figure.effect h3 {
-	position: relative;
+	/* overflow */
 	overflow: hidden;
-	padding-bottom: 20px;
-	opacity: 0;
-	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-	transition: opacity 0.35s, transform 0.35s;
 }
-
-figure.effect:hover h3 {
-	opacity: 1;
-}
-
-figure.effect h3::after {
-	position: absolute;
-	bottom: 0;
-	left: 0;
+.realisation-picture {
 	width: 100%;
-	height: 2px;
-	background: #fff;
-	content: "";
-	-webkit-transition: -webkit-transform 0.35s;
-	transition: transform 0.35s;
-	-webkit-transform: translate3d(-100%, 0, 0);
-	transform: translate3d(-100%, 0, 0);
+	display: block;
+	transition: var(--mainTransition);
 }
-
-figure.effect:hover h3::after {
-	-webkit-transform: translate3d(0, 0, 0);
-	transform: translate3d(0, 0, 0);
+.realisation-container:hover .realisation-picture {
+	opacity: 0.5;
+	transform: scale(1.1);
 }
-
-figure.effect p {
-	padding-top: 10px;
-	opacity: 0;
-	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-	transition: opacity 0.35s, transform 0.35s;
-	-webkit-transform: translate3d(100%, 0, 0);
-	transform: translate3d(100%, 0, 0);
-}
-
-figure.effect:hover p {
-	opacity: 1;
-	-webkit-transform: translate3d(0, 0, 0);
-	transform: translate3d(0, 0, 0);
-}
-.icon {
-	background: #22a39f;
+#icon-realisation {
+	background: #fad02c;
+	color: black;
 	position: absolute;
 	top: 0px;
-	right: 15px;
+	right: 0px;
 	width: 48px;
 	height: 48px;
 }
-.icon span {
-	font-size: 18px;
-	line-height: 18px;
-	padding: 15px;
+#card {
+	background-color: white;
 }
 
+/* contact */
+#contact {
+	background-color: var(--mainDark);
+}
+#contact-title {
+	color: var(--mainWhite);
+}
+#bcolor {
+	border-bottom: 2px solid #fad02c;
+}
 /* maps */
 iframe {
 	border-radius: 10px;
-	border: 5px solid orange;
+	border: 4px solid #fad02c;
 }
 
 /* Footer */

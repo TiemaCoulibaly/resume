@@ -1,7 +1,11 @@
 import React from 'react';
 
 function Title(props){
-  return (  <h2 class="text-center">{props.name}</h2>
+  return (  
+    <div  id="formation" class="background-title">
+  <h1 class="text-center">{props.name}</h1>
+     <hr class="line mx-auto"></hr>
+  </div>
   )
 }
 

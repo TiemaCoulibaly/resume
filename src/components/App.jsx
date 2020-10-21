@@ -7,15 +7,23 @@ import Competence from "./Competence";
 import Realisation from "./Realisation";
 import Contact from "./Contact";
 import Footer from "./Footer";
-
+import Divider from "./Divider";
+import Bandeau from "./Bandeau";
+import Espaceur from "./Espaceur";
 function App() {
   return <div>
    <Header/>
-   <Title name="Mon Profil"/>
+   <Divider/>
+  <Espaceur/>
    <Profil/>
-   <Title name="Formation"/>
+    <Espaceur/>
+    <Bandeau/>
+      <Divider/>
+     <Espaceur/>
+     <Title name="Formation"/>
+      <Espaceur/>
   <Formation
-    name="Formation"
+  
     subtitle="Greta"
     dateF="Oct 2019 - Juillet 2020"
     titleF="Développeur web & web mobile"
@@ -70,11 +78,38 @@ Address customer needs
 Organise business travel
 Undertake marketing activities"
 />
-<Title name="Compétence"/>
+ 
+ <Espaceur/>
 <Competence/>
-<Title name="Réalisation"/>
-<Realisation/>
-<Title name="Contact"/>
+ <Espaceur/>
+  <Bandeau  quote="«  Si vous ne pouvez pas expliquez le concept de manière simple, c’est que vous ne l’avez pas bien compris » (Richard Feynam)"/>
+ <Divider/>
+  <Espaceur/>
+<Realisation
+  title="Espace Gambon"
+  description="Wordpress, PHP, SEO"
+  source="./images/espace-gambon1.png"
+  link="https://espace-gambon.fr/"
+    title1="ToDo List"
+  description1="React js"
+  source1="./images/todo-list.png"
+  link1="https://cryptic-cliffs-02336.herokuapp.com/"
+/>
+<Realisation
+  title="Social CatchUp"
+  description="Html, css, js"
+  source="./images/social.png"
+  link="http://makeitdigital.ml/"
+    title1="Emojimedia"
+  description1="React js"
+  source1="./images/emoji.png"
+  link1="https://cryptic-cliffs-02336.herokuapp.com/"
+/>
+
+
+ <Espaceur/>
+  <Divider/>
+
 <Contact/>
 <Footer/>
 
