@@ -4,7 +4,7 @@ function Competence(){
   return (
     <div class="background-color">
     <section id="competence" class="container">
-    <h1 class="text-center">Compétence</h1>
+    <h2 class="text-center">Compétence</h2>
      <hr class="line mx-auto mb-5"></hr>
     
     <div class="row text-center my-4">

@@ -6,10 +6,12 @@ import SchoolIcon from '@material-ui/icons/School';
 import LaptopIcon from '@material-ui/icons/Laptop';
 import VisibilityIcon from '@material-ui/icons/Visibility';
 import ContactMailIcon from '@material-ui/icons/ContactMail';
+import Typical from "react-typical";
+
 function Header(){
   return (
     <header>
-    <div id="icon">
+    <div class="icon">
     <Button><a href="#home"><HomeIcon  style={{color: 'color: #fad02c;'}}/></a></Button>
     <Button><a href="#profil"><AccountBoxIcon style={{color: 'color: #fad02c;'}}/></a></Button>
     <Button><a href="#formation"><SchoolIcon style={{color: 'color: #fad02c;'}}/></a></Button>
@@ -21,7 +23,20 @@ function Header(){
  <article id="title">
  <h1>Tiema Coulibaly</h1>
  <hr class="line mx-auto"></hr>
-   <h2>Développeur web & web mobile</h2>
+   <h2><Typical
+     loop={Infinity}
+     wrapper="b"
+     steps={[
+       'Développeur Full Stack',
+       1500,
+       'Passionné d\'informatique',
+       1500,
+       'Créateur de sites web & web mobile',
+       1500
+
+     ]}
+   />
+   </h2>
  </article>
 
 </header>

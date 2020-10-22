@@ -5,7 +5,7 @@ function Bandeau(props){
   return(
     <div id="bandeau" class="container-fluid">
    
- <p>{props.quote}</p>
+ <p id="quote">{props.quote}</p>
     </div>
   )
 }

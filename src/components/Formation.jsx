@@ -9,7 +9,7 @@ function Formation(props){
     
        <h3>{props.subtitle}</h3>
        <p id="dateF">{props.dateF}</p>
-       <button class="btn btn-md btn-outline-warning">Read more</button>
+       <a href={props.link} class="btn btn-md btn-outline-warning">Read More</a>
      </div>
     
      <div class="col-md-7">

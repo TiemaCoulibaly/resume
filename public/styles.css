@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap");
+
 * {
 	padding: 0;
 	margin: 0;
@@ -15,15 +17,17 @@
 #root {
 	background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
 }
+
 h3 {
 	color: var(--secondaryColor);
+	font-family: "Patrick Hand", cursive;
 }
 /* Navbar with icons */
-#icon {
+.icon {
 	display: flex;
 	justify-content: space-between;
 }
-#icon a {
+.icon a {
 	animation: bounce 5s ease-in-out infinite;
 	color: #fad02c;
 }
@@ -38,6 +42,16 @@ h3 {
 		transform: scale(1);
 	}
 }
+.icon-social {
+	display: flex;
+	font-size: 25px;
+}
+.icon-social a {
+	animation: bounce 5s ease-in-out infinite;
+	color: #fad02c;
+	margin-left: 25px;
+}
+
 /* Jumbotron with background image */
 header {
 	padding: 16px 32px;
@@ -99,8 +113,17 @@ header {
 	color: white;
 	font-size: 25px;
 }
+#quote {
+	color: var(--mainWhite);
+	font-family: "Patrick Hand", cursive;
+	padding-top: 50px;
+}
+#profil-img {
+	border: 3px solid #fad02c;
+	border-radius: 800px;
+}
 #espaceur {
-	height: 70px;
+	height: 30px;
 }
 /* formation */
 section #formation {
@@ -115,7 +138,7 @@ section #formation {
 }
 /*------realisation---------*/
 .realisation-container {
-	background: var(--secondaryColor);
+	background: var(--primaryColor);
 	border: 0.2rem solid #fad02c;
 	border-radius: 1rem;
 
@@ -128,7 +151,7 @@ section #formation {
 	transition: var(--mainTransition);
 }
 .realisation-container:hover .realisation-picture {
-	opacity: 0.5;
+	opacity: 0.7;
 	transform: scale(1.1);
 }
 #icon-realisation {
@@ -137,8 +160,9 @@ section #formation {
 	position: absolute;
 	top: 0px;
 	right: 0px;
-	width: 48px;
-	height: 48px;
+	width: 30px;
+	height: 30px;
+	border-radius: 0.5rem;
 }
 #card {
 	background-color: white;

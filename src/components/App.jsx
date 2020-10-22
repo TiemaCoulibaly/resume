@@ -37,6 +37,7 @@ Développer le back-end d’une application web
 Créer une base de données
 Développer les composants d’accès aux données
 Élaborer et mettre en œuvre des composants dans une application de gestion de contenu ou e-commerce"
+link="http://www.greta-92.fr/1-formations-en-web-communication-et-chaine-graphique/35790-titre-professionnel-developpeur-web-et-web-mobile-formation-conventionnee-11"
   />
   <Formation
   subtitle="Greta"
@@ -48,6 +49,7 @@ Opérer des retouches avancées avec les outils adaptés
 Corriger finement la chromie d’une image
 Gérer des documents contenant de nombreux calques
 Améliorer sa productivité"
+link="http://www.greta-92.fr/1-formations-en-web-communication-et-chaine-graphique/35790-titre-professionnel-developpeur-web-et-web-mobile-formation-conventionnee-11"
 
   />
 <Formation
@@ -62,6 +64,7 @@ Manage riskElective
 Manage people performanceElective
 Manage quality customer serviceElective
 Identify and evaluate marketing opportunitiesElective"
+link="https://www.lonsdaleinstitute.edu.au/courses/diploma-business/"
 />
 <Formation
   subtitle="Lonsdale Institute"
@@ -77,6 +80,7 @@ Make a presentation
 Address customer needs
 Organise business travel
 Undertake marketing activities"
+link="https://www.lonsdaleinstitute.edu.au/courses/certificate-iv-business/"
 />
  
  <Espaceur/>
@@ -85,26 +89,38 @@ Undertake marketing activities"
   <Bandeau  quote="«  Si vous ne pouvez pas expliquez le concept de manière simple, c’est que vous ne l’avez pas bien compris » (Richard Feynam)"/>
  <Divider/>
   <Espaceur/>
+   <Title name="Réalisation"/>
 <Realisation
   title="Espace Gambon"
   description="Wordpress, PHP, SEO"
-  source="./images/espace-gambon1.png"
+  source="./images/espace.png"
   link="https://espace-gambon.fr/"
     title1="ToDo List"
   description1="React js"
-  source1="./images/todo-list.png"
+  source1="./images/todo.png"
   link1="https://cryptic-cliffs-02336.herokuapp.com/"
+    title2="Social CatchUp"
+  description2="Html, css, js"
+  source2="./images/social1.png"
+  link2="http://makeitdigital.ml/"
 />
+<Espaceur/>
+
 <Realisation
-  title="Social CatchUp"
-  description="Html, css, js"
-  source="./images/social.png"
-  link="http://makeitdigital.ml/"
+ title="Keeper App"
+  description="React, Express js"
+  source="./images/keeper-app.png"
+  link="https://keepit-f5164.web.app/"
     title1="Emojimedia"
   description1="React js"
   source1="./images/emoji.png"
-  link1="https://cryptic-cliffs-02336.herokuapp.com/"
+ link1="#"
+  title2="Emojimedia"
+  description2="React js"
+  source2="./images/emoji.png"
+  link2="https://cryptic-cliffs-02336.herokuapp.com/"
 />
+
 
 
  <Espaceur/>
