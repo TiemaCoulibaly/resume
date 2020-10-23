@@ -22,7 +22,16 @@ h3 {
 	color: var(--secondaryColor);
 	font-family: "Patrick Hand", cursive;
 }
-/* Navbar with icons */
+h5 {
+	font-family: "Patrick Hand", cursive;
+}
+
+/* h1 section background color titles */
+.background-title {
+	background-color: var(--mainWhite);
+}
+/* ----------------------------------- */
+/* Navbar icons */
 .icon {
 	display: flex;
 	justify-content: space-between;
@@ -51,11 +60,12 @@ h3 {
 	color: #fad02c;
 	margin-left: 25px;
 }
+/* ------------------------------------------ */
 
-/* Jumbotron with background image */
+/* Header with background image */
 header {
 	padding: 16px 32px;
-	background-image: url("./images/laptop.jpg");
+	background-image: url("./images/laptop1.jpg");
 	background-color: rgba(1, 1, 1, 1);
 	height: 50vh;
 
@@ -82,7 +92,8 @@ header {
 	box-shadow: 2px 5px #00000010;
 	width: 250px;
 }
-/* content divider */
+/* ---------------------------- */
+/* content line color divider */
 .content-divider {
 	height: 0.5rem;
 	background: linear-gradient(
@@ -93,16 +104,12 @@ header {
 		var(--primaryColor)
 	);
 }
-/* end of content divider */
+/* end of content line color divider */
 
-/* title */
-.background-title {
-	background-color: var(--mainWhite);
-}
 /* Profil section */
 
 #bandeau {
-	background-image: url("./images/laptop.jpg");
+	background-image: url("./images/laptop1.jpg");
 	background-attachment: fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -122,24 +129,33 @@ header {
 	border: 3px solid #fad02c;
 	border-radius: 800px;
 }
+/* End of profil section */
+
+/* espaceur */
 #espaceur {
 	height: 30px;
 }
-/* formation */
+/* end of espaceur */
+
+/* formation section */
 section #formation {
 	background-color: var(--mainWhite);
 }
 #dateF {
 	color: var(--primaryColor);
 }
+/* end of formation section */
 
+/* competence section */
 .ico {
 	font-size: 60px;
 }
-/*------realisation---------*/
+/* end of competence */
+
+/*------realisation section ---------*/
 .realisation-container {
 	background: var(--primaryColor);
-	border: 0.2rem solid #fad02c;
+	border: 0.1rem solid #fad02c;
 	border-radius: 1rem;
 
 	/* overflow */
@@ -167,8 +183,18 @@ section #formation {
 #card {
 	background-color: white;
 }
+/* end of realisation section */
 
-/* contact */
+/* contact section  */
+
+.contact-icon {
+	display: flex;
+	font-size: 15px;
+}
+h5 .contact-icon {
+	animation: bounce 5s ease-in-out infinite;
+	color: var(--secondaryColor);
+}
 #contact {
 	background-color: var(--mainDark);
 }
@@ -183,9 +209,14 @@ iframe {
 	border-radius: 10px;
 	border: 4px solid #fad02c;
 }
+/* end of contact section  */
 
-/* Footer */
+/* Footer section */
 footer {
 	background-color: black;
-	color: white;
+	color: var(--secondaryColor);
+	margin: 0;
+	padding: 0;
+	margin-bottom: 0;
+	position: relative;
 }

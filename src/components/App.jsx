@@ -20,13 +20,15 @@ function App() {
     <Bandeau/>
       <Divider/>
      <Espaceur/>
-     <Title name="Formation"/>
+     <Title 
+     id="formation"
+     name="Formation"/>
       <Espaceur/>
   <Formation
   
     subtitle="Greta"
     dateF="Oct 2019 - Juillet 2020"
-    titleF="Développeur web & web mobile"
+    titleF="Développeur web & web mobile Bac+2"
     description="Développer le front-end d’une application web
 Maquetter une application
 Réaliser une interface utilisateur web
@@ -89,37 +91,35 @@ link="https://www.lonsdaleinstitute.edu.au/courses/certificate-iv-business/"
   <Bandeau  quote="«  Si vous ne pouvez pas expliquez le concept de manière simple, c’est que vous ne l’avez pas bien compris » (Richard Feynam)"/>
  <Divider/>
   <Espaceur/>
-   <Title name="Réalisation"/>
+   <Title 
+   name="Réalisation"
+     id="realisation"
+   />
 <Realisation
   title="Espace Gambon"
   description="Wordpress, PHP, SEO"
   source="./images/espace.png"
   link="https://espace-gambon.fr/"
+
     title1="ToDo List"
   description1="React js"
   source1="./images/todo.png"
   link1="https://cryptic-cliffs-02336.herokuapp.com/"
-    title2="Social CatchUp"
-  description2="Html, css, js"
-  source2="./images/social1.png"
-  link2="http://makeitdigital.ml/"
 />
 <Espaceur/>
 
-<Realisation
- title="Keeper App"
-  description="React, Express js"
-  source="./images/keeper-app.png"
-  link="https://keepit-f5164.web.app/"
-    title1="Emojimedia"
-  description1="React js"
-  source1="./images/emoji.png"
- link1="#"
-  title2="Emojimedia"
-  description2="React js"
-  source2="./images/emoji.png"
-  link2="https://cryptic-cliffs-02336.herokuapp.com/"
+<Realisation 
+      title="Social CatchUp"
+  description="Html, css, js"
+  source="./images/social1.png"
+  link="http://makeitdigital.ml/"
+
+   title1="Keeper App"
+  description1="React, Express js"
+  source1="./images/keeper-app.png"
+  link1="https://keepit-f5164.web.app/"
 />
+
 
 
 
