@@ -10,7 +10,7 @@ import Typical from "react-typical";
 
 function Header(){
   return (
-    <header>
+    <header id="home">
     <div class="icon">
     <Button><a href="#home"><HomeIcon  style={{color: 'color: #fad02c;'}}/></a></Button>
     <Button><a href="#profil"><AccountBoxIcon style={{color: 'color: #fad02c;'}}/></a></Button>

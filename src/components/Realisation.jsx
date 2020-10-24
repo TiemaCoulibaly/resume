@@ -22,7 +22,12 @@ function Realisation(props){
 						/>
 						 <div id="card" class="card-body">
 						 <h3 class="card-title">{props.title}</h3>
-    <p class="card-text">{props.description}</p>
+    <p class="card-text text-center">
+		<i class={props.icon}></i>
+		<i class={props.iconF}></i>
+		<i class={props.iconS}></i>
+	
+		</p>
 		<a  href={props.link} ><LinkIcon id="icon-realisation"/></a>
   </div>
 					</div>
@@ -43,7 +48,10 @@ function Realisation(props){
 						/>
 						 <div id="card" class="card-body">
 						 <h3 class="card-title">{props.title1}</h3>
-    <p class="card-text">{props.description1}</p>
+    <p class="card-text">
+		<i class={props.icon1}></i>
+		<i class={props.icon1F}></i>
+		</p>
 		<a  href={props.link1} ><LinkIcon id="icon-realisation"/></a>
   </div>
 					</div>

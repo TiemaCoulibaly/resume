@@ -97,11 +97,13 @@ link="https://www.lonsdaleinstitute.edu.au/courses/certificate-iv-business/"
    />
 <Realisation
   title="Espace Gambon"
-  description="Wordpress, PHP, SEO"
+  icon="fab fa-wordpress icon-realisation mx-2"
+  iconF="fab fa-php icon-realisation mx-2"
   source="./images/espace.png"
   link="https://espace-gambon.fr/"
 
     title1="ToDo List"
+     icon1="fab fa-react icon-realisation mx-2"
   description1="React js"
   source1="./images/todo.png"
   link1="https://cryptic-cliffs-02336.herokuapp.com/"
@@ -110,12 +112,14 @@ link="https://www.lonsdaleinstitute.edu.au/courses/certificate-iv-business/"
 
 <Realisation 
       title="Social CatchUp"
-  description="Html, css, js"
+   icon="fab fa-html5 icon-realisation mx-2"
+   iconF="fab fa-css3-alt icon-realisation mx-2"
+   iconS="fab fa-js-square icon-realisation mx-2"
   source="./images/social1.png"
   link="http://makeitdigital.ml/"
 
    title1="Keeper App"
-  description1="React, Express js"
+  icon1="fab fa-react icon-realisation mx-2"
   source1="./images/keeper-app.png"
   link1="https://keepit-f5164.web.app/"
 />

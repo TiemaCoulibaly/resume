@@ -11,7 +11,7 @@ function Competence(){
    
 <div class="col"><i class="fab fa-html5 ico"></i></div>
 <div class="col"><i class="fab fa-css3-alt ico"></i></div>
-<div class="col"><i class="fab fa-js ico"></i></div>
+<div class="col"><i class="fab fa-js-square ico"></i></div>
 </div>
   <div class="row text-center my-4">
      
