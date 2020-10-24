@@ -10,8 +10,8 @@ function Realisation(props){
 
 <div class="d-flex justify-content-center">
 <div class="row">
-  <div class="col">
-	<article class="card mx-5" style={{width: "18rem"}}>
+  <div class="col col-sm-6">
+	<article class="card mx-5 my-3" style={{width: "18rem"}}>
 					<div class="realisation-container">
 					
 					
@@ -35,9 +35,9 @@ function Realisation(props){
 
 </div>
 
-  <div class="col">
+  <div class="col col-sm-6">
 
-	<article class="card mx-5" style={{width: "18rem"}}>
+	<article class="card mx-5 my-3" style={{width: "18rem"}}>
 					<div class="realisation-container">
 					
 					
