@@ -1,0 +1,42 @@
+{
+  "profil":{
+    "1": "A Propos"
+  },
+  "profilSubtitle":{
+    "1":"Ouvert a toutes nouvelles opportunité"
+  },
+  "about":{
+    "1": "A Propos De Moi",
+     "2": "Mon envie d’apprendre, monter en compétence, mon sens du relationnel, ma force de proposition, je m’adapte facilement dans une équipe, dans le but de consolider également mes acquis et surtout partager mon savoir faire au sein d’une entreprise"
+  },
+  "details": {
+    "1": "Détails",
+    "2":"Nom: ",
+    "3":"Prénom: ",
+    "4":"Ville: "
+  },
+  "title":{
+    "1":"Formation",
+    "2":"Compétence",
+    "3":"Réalisation"
+  },
+  "formation": {
+    "1": "Développeur web & web mobile Bac+2",
+    "2": "Développer le front-end d'une application web Maquetter une application Réaliser une interface utilisateur web Développer une interface utilisateur web Développer une interface utilisateur web dynamique Réaliser une interface utilisateur avec une solution de gestion de contenu ou e-commerce Développer le back-end d'une application web Créer une base de données Développer les composants d'accès aux données Élaborer et mettre en oeuvre des composants dans une aplication de gestion de contenu ou e-commerce",
+    "3":"Paramétrer Photoshop et explorer Bridge Sélectionner et détourer les parties d’une image Opérer des retouches avancées avec les outils adaptés Corriger finement la chromie d’une image Gérer des documents contenant de nombreux calques Améliorer sa productivité",
+    "4": "Gérer les processus de sélection et d'intégration des recrutements Gérer des programmes qui favorisent l'efficacité personnelle Gérer les priorités de travail personnelles et le développement professionnel Entreprendre des travaux de projet Gérer les risques Gérer les performances des personnes au choix Gérer un service client de qualité au choix Identifier et évaluer les opportunités de marketing au choix ",
+    "5": "Mettre en œuvre et surveiller les politiques, procédures et programmes du WHS pour répondre aux exigences législatives Promouvoir l'innovation dans un environnement d'équipe Développer des équipes et des individus Organiser des réunions Promouvoir les produits et services Analyser et présenter les informations de recherche Faire une présentation Répondre aux besoins des clients Organisez vos voyages d'affaires Entreprendre des activités de marketing "
+  },
+  "readmore":{
+    "1": "En Savoir Plus"
+  },
+  "quote": {
+    "1": "«  Si vous ne pouvez pas expliquez le concept de manière simple, c’est que vous ne l’avez pas bien compris » (Richard Feynam)"
+  },
+  "resume":{
+    "1": "Mon CV"
+  }
+  
+ 
+
+}

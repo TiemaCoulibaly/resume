@@ -84,7 +84,13 @@ header {
 	width: 100%;
 	color: white;
 	font-size: 50px;
-	margin-top: 25vh;
+}
+#flag {
+	text-align: center;
+	margin-top: 20vh;
+}
+.flag-img {
+	height: 30px;
 }
 /* hr */
 .line {
