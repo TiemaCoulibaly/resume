@@ -1,4 +1,9 @@
 {
+  "dev":{
+    "1":"Web Developer",
+    "2":"IT Passionate",
+    "3":"Website Creator"
+  },
   "profil":{
     "1": "About"
   },
@@ -17,9 +22,9 @@
     "4":"City: "
   },
   "title":{
-    "1":"Education",
-    "2":"Skills",
-    "3": "Achievement"
+    "1":"Educations",
+    "2":"Languages",
+    "3": "Projects"
   },
   "formation": {
     "1": "Web Developer",

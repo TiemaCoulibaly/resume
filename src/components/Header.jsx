@@ -6,7 +6,6 @@ import SchoolIcon from "@material-ui/icons/School";
 import LaptopIcon from "@material-ui/icons/Laptop";
 import VisibilityIcon from "@material-ui/icons/Visibility";
 import ContactMailIcon from "@material-ui/icons/ContactMail";
-import FlagIcon from "@material-ui/icons/Flag";
 import Typical from "react-typical";
 import { useTranslation } from "react-i18next";
 
@@ -20,44 +19,48 @@ function Header() {
 			<div class="icon">
 				<Button>
 					<a href="#home">
-						<HomeIcon style={{ color: "color: #fad02c;" }} />
+						<HomeIcon />
 					</a>
 				</Button>
 				<Button>
 					<a href="#profil">
-						<AccountBoxIcon style={{ color: "color: #fad02c;" }} />
+						<AccountBoxIcon />
 					</a>
 				</Button>
 				<Button>
 					<a href="#formation">
-						<SchoolIcon style={{ color: "color: #fad02c;" }} />
+						<SchoolIcon />
 					</a>
 				</Button>
 				<Button>
 					<a href="#competence">
-						<LaptopIcon style={{ color: "color: #fad02c;" }} />
+						<LaptopIcon />
 					</a>
 				</Button>
 				<Button>
 					<a href="#realisation">
-						<VisibilityIcon style={{ color: "color: #fad02c;" }} />
+						<VisibilityIcon />
 					</a>
 				</Button>
 				<Button>
 					<a href="#contact">
-						<ContactMailIcon style={{ color: "color: #fad02c;" }} />
+						<ContactMailIcon />
 					</a>
 				</Button>
 			</div>
 			<div id="flag">
 				<Button
+					style={{ color: "color: #209cee;" }}
+					id="bouton-flag1"
 					variant="contained"
-					color="primary"
 					onClick={() => handleClick("fr")}>
 					FRANCAIS
 					<img class="flag-img" src={"../../images/french.png"} />
 				</Button>
-				<Button variant="contained" onClick={() => handleClick("en")}>
+				<Button
+					id="bouton-flag"
+					variant="contained"
+					onClick={() => handleClick("en")}>
 					ENGLISH
 					<img
 						class="flag-img"
@@ -76,13 +79,21 @@ function Header() {
 						loop={Infinity}
 						wrapper="b"
 						steps={[
-							"Développeur Full Stack",
+							t("dev.1"),
 							1500,
-							"Passionné d'informatique",
+							t("dev.2"),
 							1500,
-							"Créateur de sites web & web mobile",
+							t("dev.3"),
 							1500,
 						]}
+						// steps={[
+						// 	"Développeur Web",
+						// 	1500,
+						// 	"Passionné d'informatique",
+						// 	1500,
+						// 	"Créateur de sites web & web mobile",
+						// 	1500,
+						// ]}
 					/>
 				</h2>
 			</article>

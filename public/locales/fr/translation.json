@@ -1,4 +1,9 @@
 {
+  "dev":{
+    "1":"Développeur Full stack",
+    "2":"Passionné d'informatique",
+    "3":"Créateur de sites web & web mobile"
+  },
   "profil":{
     "1": "A Propos"
   },
