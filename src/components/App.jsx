@@ -27,6 +27,13 @@ function App() {
 			<Title id="formation" name={t("title.1")} />
 			<Espaceur />
 			<Formation
+				subtitle="Simplon.co"
+				dateF="2020 - 2021"
+				titleF={t("formation.8")}
+				description={t("formation.9")}
+				link="https://simplon.co/formation/concepteur-developpeur-d-applications/12"
+			/>
+			<Formation
 				subtitle="Greta"
 				dateF="Oct 2019 - Juillet 2020"
 				titleF={t("formation.1")}
@@ -43,15 +50,15 @@ function App() {
 			<Formation
 				subtitle="Lonsdale Institute"
 				dateF="2015 - 2016"
-				titleF="Diploma of Business, Commerce International (Australie)"
-				description={t("formation.4")}
+				titleF={t("formation.4")}
+				description={t("formation.5")}
 				link="https://www.lonsdaleinstitute.edu.au/courses/diploma-business/"
 			/>
 			<Formation
 				subtitle="Lonsdale Institute"
 				dateF="2014 - 2015"
-				titleF="Certificat IV in Business, Commerce International (Australie)"
-				description={t("formation.5")}
+				titleF={t("formation.6")}
+				description={t("formation.7")}
 				link="https://www.lonsdaleinstitute.edu.au/courses/certificate-iv-business/"
 			/>
 

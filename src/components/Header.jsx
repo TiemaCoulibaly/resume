@@ -54,14 +54,14 @@ function Header() {
 					id="bouton-flag1"
 					variant="contained"
 					onClick={() => handleClick("fr")}>
-					FRANCAIS
+					{t("bouton.1")}
 					<img class="flag-img" src={"../../images/french.png"} />
 				</Button>
 				<Button
 					id="bouton-flag"
 					variant="contained"
 					onClick={() => handleClick("en")}>
-					ENGLISH
+					{t("bouton.2")}
 					<img
 						class="flag-img"
 						src={

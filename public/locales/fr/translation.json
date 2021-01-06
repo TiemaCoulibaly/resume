@@ -1,4 +1,8 @@
 {
+   "bouton":{
+    "1":"FRANCAIS",
+    "2": "ANGLAIS"
+  },
   "dev":{
     "1":"Développeur Full stack",
     "2":"Passionné d'informatique",
@@ -26,11 +30,15 @@
     "3":"Réalisation"
   },
   "formation": {
+     "8": "Concepteur Développeur d'Applications Programmation informatique Bac +3",
+    "9": " ◇  Maquettes, schéma fonctionnel, diagrammes ◇ Base de données, MCD, MPD ◇ Développement front & back-end ◇ Développement Mobile ◇ Déploiement des applications Web ◇ SSH, Scrum, Peer review, Git, Sécurisation",
     "1": "Développeur web & web mobile Bac+2",
-    "2": "Développer le front-end d'une application web Maquetter une application Réaliser une interface utilisateur web Développer une interface utilisateur web Développer une interface utilisateur web dynamique Réaliser une interface utilisateur avec une solution de gestion de contenu ou e-commerce Développer le back-end d'une application web Créer une base de données Développer les composants d'accès aux données Élaborer et mettre en oeuvre des composants dans une aplication de gestion de contenu ou e-commerce",
-    "3":"Paramétrer Photoshop et explorer Bridge Sélectionner et détourer les parties d’une image Opérer des retouches avancées avec les outils adaptés Corriger finement la chromie d’une image Gérer des documents contenant de nombreux calques Améliorer sa productivité",
-    "4": "Gérer les processus de sélection et d'intégration des recrutements Gérer des programmes qui favorisent l'efficacité personnelle Gérer les priorités de travail personnelles et le développement professionnel Entreprendre des travaux de projet Gérer les risques Gérer les performances des personnes au choix Gérer un service client de qualité au choix Identifier et évaluer les opportunités de marketing au choix ",
-    "5": "Mettre en œuvre et surveiller les politiques, procédures et programmes du WHS pour répondre aux exigences législatives Promouvoir l'innovation dans un environnement d'équipe Développer des équipes et des individus Organiser des réunions Promouvoir les produits et services Analyser et présenter les informations de recherche Faire une présentation Répondre aux besoins des clients Organisez vos voyages d'affaires Entreprendre des activités de marketing "
+    "2": "◇Développer le front-end d'une application web ◇Maquetter une application Réaliser une interface utilisateur web ◇Développer une interface utilisateur web ◇Développer une interface utilisateur web dynamique ◇Réaliser une interface utilisateur avec une solution de gestion de contenu ou e-commerce ◇ Développer le back-end d'une application web ◇ Créer une base de données ◇ Développer les composants d'accès aux données ◇ Élaborer et mettre en oeuvre des composants dans une aplication de gestion de contenu ou e-commerce",
+    "3":"◇ Paramétrer Photoshop et explorer Bridge ◇ Sélectionner et détourer les parties d’une image ◇ Opérer des retouches avancées avec les outils adaptés ◇ Corriger finement la chromie d’une image ◇ Gérer des documents contenant de nombreux calques ◇ Améliorer sa productivité",
+    "4":"Diplome en Commerce International (Australie)",
+    "5": "◇ Gérer les processus de sélection et d'intégration des recrutements ◇ Gérer des programmes qui favorisent l'efficacité personnelle ◇ Gérer les priorités de travail personnelles et le développement professionnel ◇ Entreprendre des travaux de projet ◇ Gérer les risques Gérer les performances des personnes au choix ◇ Gérer un service client de qualité au choix Identifier et évaluer les opportunités de marketing au choix ",
+    "6":"Certificat IV en Commerce International (Australie)",
+    "7": "◇ Mettre en œuvre et surveiller les politiques, procédures et programmes du WHS pour répondre aux exigences législatives ◇ Promouvoir l'innovation dans un environnement d'équipe ◇ Développer des équipes et des individus ◇ Organiser des réunions Promouvoir les produits et services Analyser et présenter les informations de recherche ◇ Faire une présentation Répondre aux besoins des clients ◇ Organisez vos voyages d'affaires Entreprendre des activités de marketing "
   },
   "readmore":{
     "1": "En Savoir Plus"
