@@ -39,8 +39,8 @@ function Contact() {
 						<div class="card-text mx-auto">
 							<a
 								class="btn btn-outline-primary my-3"
-								href="./images/resume.pdf">
-								{t("resume.1")}
+								href={t("resume.1")}>
+								{t("resume.2")}
 							</a>
 						</div>
 					</div>
