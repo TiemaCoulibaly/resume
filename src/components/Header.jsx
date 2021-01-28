@@ -1,4 +1,5 @@
 import React from "react";
+import { makeStyles } from "@material-ui/core";
 import Button from "@material-ui/core/Button";
 import HomeIcon from "@material-ui/icons/Home";
 import AccountBoxIcon from "@material-ui/icons/AccountBox";
@@ -14,8 +15,31 @@ function Header() {
 	const handleClick = (lang) => {
 		i18n.changeLanguage(lang);
 	};
+	const useStyles = makeStyles((root) => ({
+		container: {
+			height: "100vh",
+			[root.breakpoints.down("md")]: {
+				height: "50vh",
+			},
+			[root.breakpoints.down("xs")]: {
+				height: "50vh",
+			},
+		},
+		btnFlag: {
+			textAlign: "center",
+			marginTop: "30vh",
+			marginBottom: "5vh",
+			[root.breakpoints.down("xs")]: {
+				marginTop: "17vh",
+			},
+			[root.breakpoints.down("md")]: {
+				marginTop: "17vh",
+			},
+		},
+	}));
+	const classes = useStyles();
 	return (
-		<header id="home">
+		<header className={classes.container} id="home">
 			<div class="icon">
 				<Button>
 					<a href="#home">
@@ -48,7 +72,7 @@ function Header() {
 					</a>
 				</Button>
 			</div>
-			<div id="flag">
+			<div className={classes.btnFlag} id="flag">
 				<Button
 					style={{ color: "color: #209cee;" }}
 					id="bouton-flag1"
