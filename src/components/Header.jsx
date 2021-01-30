@@ -1,5 +1,5 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core";
+import { makeStyles, Box } from "@material-ui/core";
 import Button from "@material-ui/core/Button";
 import HomeIcon from "@material-ui/icons/Home";
 import AccountBoxIcon from "@material-ui/icons/AccountBox";
@@ -19,13 +19,24 @@ function Header() {
 		container: {
 			height: "50vh",
 			[root.breakpoints.down("md")]: {
-				height: "50vh",
+				height: "100vh",
 			},
 			[root.breakpoints.down("xs")]: {
 				height: "50vh",
 			},
 		},
-		btnFlag: {
+		icon: {
+			display: "flex",
+			justifyContent: "space-between",
+		},
+		btnIcon: {
+			fontSize: 25,
+			[root.breakpoints.down("md")]: {
+				fontSize: 40,
+			},
+		},
+
+		btnContainer: {
 			textAlign: "center",
 			marginTop: "10vh",
 			marginBottom: "5vh",
@@ -33,65 +44,121 @@ function Header() {
 				marginTop: "17vh",
 			},
 			[root.breakpoints.down("md")]: {
-				marginTop: "17vh",
+				marginTop: "30vh",
+			},
+		},
+		btnFrench: {
+			backgroundColor: "#209cee",
+			color: "white",
+			height: "45px",
+			width: "140px",
+			fontSize: "15px",
+			margin: "10px",
+			[root.breakpoints.down("md")]: {
+				height: "90px",
+				width: "240px",
+				fontSize: "30px",
+				margin: "15px",
+			},
+		},
+		btnEnglish: {
+			height: "45px",
+			width: "140px",
+			fontSize: "15px",
+			margin: "10px",
+			[root.breakpoints.down("md")]: {
+				height: "90px",
+				width: "240px",
+				fontSize: "30px",
+				margin: "15px",
+			},
+		},
+		flagImg: {
+			height: "30px",
+			padding: "5px",
+			[root.breakpoints.down("md")]: {
+				height: "50px",
+			},
+		},
+		titleContainer: {
+			textAlign: "center",
+		},
+		title: {
+			color: "white",
+			fontSize: "40px",
+			[root.breakpoints.down("md")]: {
+				fontSize: "70px",
+			},
+		},
+		tagline: {
+			color: "white",
+			fontSize: "30px",
+			[root.breakpoints.down("md")]: {
+				fontSize: "50px",
 			},
 		},
 	}));
 	const classes = useStyles();
 	return (
 		<header className={classes.container} id="home">
-			<div className="icon">
-				<Button>
-					<a href="#home">
-						<HomeIcon />
-					</a>
+			<Box className={classes.icon}>
+				<Button href="#home">
+					<HomeIcon
+						className={classes.btnIcon}
+						style={{ color: "#fad02c" }}
+					/>
 				</Button>
-				<Button>
-					<a href="#profil">
-						<AccountBoxIcon />
-					</a>
+				<Button href="#profil">
+					<AccountBoxIcon
+						className={classes.btnIcon}
+						style={{ color: "#fad02c" }}
+					/>
 				</Button>
-				<Button>
-					<a href="#formation">
-						<SchoolIcon />
-					</a>
+				<Button href="#formation">
+					<SchoolIcon
+						className={classes.btnIcon}
+						style={{ color: "#fad02c" }}
+					/>
 				</Button>
-				<Button>
-					<a href="#competence">
-						<LaptopIcon />
-					</a>
+				<Button href="#competence">
+					<LaptopIcon
+						className={classes.btnIcon}
+						style={{ color: "#fad02c" }}
+					/>
 				</Button>
-				<Button>
-					<a href="#realisation">
-						<VisibilityIcon />
-					</a>
+				<Button href="#realisation">
+					<VisibilityIcon
+						className={classes.btnIcon}
+						style={{ color: "#fad02c" }}
+					/>
 				</Button>
-				<Button>
-					<a href="#contact">
-						<ContactMailIcon />
-					</a>
+				<Button href="#contact">
+					<ContactMailIcon
+						className={classes.btnIcon}
+						style={{ color: "#fad02c" }}
+					/>
 				</Button>
-			</div>
-			<div className={classes.btnFlag} id="flag">
+			</Box>
+			<div className={classes.btnContainer}>
 				<Button
-					style={{ color: "color: #209cee" }}
-					id="bouton-flag1"
+					color="primary"
+					className={classes.btnFrench}
 					variant="contained"
 					onClick={() => handleClick("fr")}>
 					{t("bouton.1")}
 					<img
-						className="flag-img"
+						className={classes.flagImg}
 						alt="flag-french"
 						src={"../../images/french.png"}
 					/>
 				</Button>
 				<Button
-					id="bouton-flag"
+					className={classes.btnEnglish}
 					variant="contained"
 					onClick={() => handleClick("en")}>
 					{t("bouton.2")}
 					<img
-						className="flag-img"
+						className={classes.flagImg}
 						src={
 							"https://img.icons8.com/emoji/2x/united-kingdom-emoji.png"
 						}
@@ -99,11 +166,11 @@ function Header() {
 					/>
 				</Button>
 			</div>
-			<article id="title">
-				<h1>Tiema Coulibaly</h1>
+			<article className={classes.titleContainer}>
+				<h1 className={classes.title}>Tiema Coulibaly</h1>
 
 				<hr className="line mx-auto"></hr>
-				<h2>
+				<h2 className={classes.tagline}>
 					<Typical
 						loop={Infinity}
 						wrapper="b"
@@ -115,14 +182,6 @@ function Header() {
 							t("dev.3"),
 							1500,
 						]}
-						// steps={[
-						// 	"Développeur Web",
-						// 	1500,
-						// 	"Passionné d'informatique",
-						// 	1500,
-						// 	"Créateur de sites web & web mobile",
-						// 	1500,
-						// ]}
 					/>
 				</h2>
 			</article>

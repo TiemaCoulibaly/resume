@@ -18,7 +18,7 @@ function App() {
 		<div>
 			<Header />
 			<Divider />
-			<Espaceur />
+
 			<Profil />
 			<Espaceur />
 			<Bandeau />

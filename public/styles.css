@@ -26,20 +26,8 @@ h5 {
 	font-family: "Patrick Hand", cursive;
 }
 
-/* h1 section background color titles */
-.background-title {
-	background-color: var(--mainWhite);
-}
 /* ----------------------------------- */
-/* Navbar icons */
-.icon {
-	display: flex;
-	justify-content: space-between;
-}
-.icon a {
-	animation: bounced 5s ease-in-out infinite;
-	color: #fad02c;
-}
+
 @keyframes bounced {
 	0% {
 		transform: scale(1);
@@ -51,23 +39,12 @@ h5 {
 		transform: scale(1);
 	}
 }
-.icon-social {
-	display: flex;
-	font-size: 25px;
-}
-.icon-social a {
-	animation: bounced 5s ease-in-out infinite;
-	color: #fad02c;
-	margin-left: 25px;
-}
-/* ------------------------------------------ */
 
 /* Header with background image */
 header {
 	padding: 16px 32px;
 	background-image: url("./images/laptop1.jpg");
 	background-color: rgba(1, 1, 1, 1);
-	/* height: 100vh; */
 
 	background-size: cover;
 	background-attachment: fixed;
@@ -79,29 +56,7 @@ header {
 	margin-top: 0;
 }
 /* Title with description  */
-#title {
-	text-align: center;
-	width: 100%;
-	color: white;
-	font-size: 50px;
-}
-/* #flag {
-	text-align: center;
-	margin-top: 30vh;
-	margin-bottom: 5vh;
-} */
-.flag-img {
-	height: 30px;
-	padding: 5px;
-}
-#bouton-flag {
-	margin-left: 7px;
-}
-#bouton-flag1 {
-	margin-right: 7px;
-	background-color: var(--secondaryColor);
-	color: var(--mainWhite);
-}
+
 /* hr */
 .line {
 	border-top: 2px solid #fad02c;
