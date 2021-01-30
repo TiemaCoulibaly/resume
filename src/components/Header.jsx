@@ -17,7 +17,7 @@ function Header() {
 	};
 	const useStyles = makeStyles((root) => ({
 		container: {
-			height: "100vh",
+			height: "50vh",
 			[root.breakpoints.down("md")]: {
 				height: "50vh",
 			},
@@ -27,7 +27,7 @@ function Header() {
 		},
 		btnFlag: {
 			textAlign: "center",
-			marginTop: "30vh",
+			marginTop: "10vh",
 			marginBottom: "5vh",
 			[root.breakpoints.down("xs")]: {
 				marginTop: "17vh",
@@ -40,7 +40,7 @@ function Header() {
 	const classes = useStyles();
 	return (
 		<header className={classes.container} id="home">
-			<div class="icon">
+			<div className="icon">
 				<Button>
 					<a href="#home">
 						<HomeIcon />
@@ -74,12 +74,16 @@ function Header() {
 			</div>
 			<div className={classes.btnFlag} id="flag">
 				<Button
-					style={{ color: "color: #209cee;" }}
+					style={{ color: "color: #209cee" }}
 					id="bouton-flag1"
 					variant="contained"
 					onClick={() => handleClick("fr")}>
 					{t("bouton.1")}
-					<img class="flag-img" src={"../../images/french.png"} />
+					<img
+						className="flag-img"
+						alt="flag-french"
+						src={"../../images/french.png"}
+					/>
 				</Button>
 				<Button
 					id="bouton-flag"
@@ -87,17 +91,18 @@ function Header() {
 					onClick={() => handleClick("en")}>
 					{t("bouton.2")}
 					<img
-						class="flag-img"
+						className="flag-img"
 						src={
 							"https://img.icons8.com/emoji/2x/united-kingdom-emoji.png"
 						}
+						alt="flag-uk"
 					/>
 				</Button>
 			</div>
 			<article id="title">
 				<h1>Tiema Coulibaly</h1>
 
-				<hr class="line mx-auto"></hr>
+				<hr className="line mx-auto"></hr>
 				<h2>
 					<Typical
 						loop={Infinity}

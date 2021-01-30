@@ -2,24 +2,24 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 
 function Profil() {
-	const { t, i18n } = useTranslation();
+	const { t } = useTranslation();
 	return (
-		<div class="background-color">
-			<section id="profil" class="container">
-				<div class="my-5" class="text-center">
+		<div className="background-color">
+			<section id="profil" className="container">
+				<div className="my-5 text-center">
 					<h2>{t("profil.1")}</h2>
 					<p>
 						<em>{t("profilSubtitle.1")}</em>
 					</p>
 				</div>
-				<hr class="line mx-auto"></hr>
-				<div class="mx-auto">
-					<div class="row">
-						<div class="col-md-3 offset-md-2">
+				<hr className="line mx-auto"></hr>
+				<div className="mx-auto">
+					<div className="row">
+						<div className="col-md-3 offset-md-2">
 							<h3>{t("about.1")}</h3>
 							<p>{t("about.2")}</p>
 						</div>
-						<div class="col-md-auto">
+						<div className="col-md-auto">
 							<img
 								id="profil-img"
 								src="./images/profil.png"
@@ -28,7 +28,7 @@ function Profil() {
 								height="200"
 							/>
 						</div>
-						<div class="col">
+						<div className="col">
 							<h3>{t("details.1")}</h3>
 							<p>
 								<strong>{t("details.2")} </strong>Coulibaly
@@ -41,12 +41,12 @@ function Profil() {
 							</p>
 							<br></br>
 
-							<p class="icon-social">
+							<p className="icon-social">
 								<a href="https://github.com/TiemaCoulibaly">
-									<i class="fab fa-github"></i>
+									<i className="fab fa-github"></i>
 								</a>
 								<a href="https://www.linkedin.com/in/tiema-coulibaly-063b94195/">
-									<i class="fab fa-linkedin"></i>
+									<i className="fab fa-linkedin"></i>
 								</a>
 							</p>
 						</div>

@@ -13,7 +13,7 @@ import Espaceur from "./Espaceur";
 import { useTranslation } from "react-i18next";
 
 function App() {
-	const { t, i18n } = useTranslation();
+	const { t } = useTranslation();
 	return (
 		<div>
 			<Header />
@@ -98,13 +98,13 @@ function App() {
 			<Realisation
 				title="Disability Provider"
 				icon="fab fa-wordpress icon-realisation mx-2"
-				icon1F="fab fa-css3-alt icon-realisation mx-2"
+				iconF="fab fa-css3-alt icon-realisation mx-2"
 				source="./images/disabilityprovider.png"
 				link="https://mydisabilityprovider.com.au/"
 				title1="Pomodoro App"
 				icon1="fab fa-react icon-realisation mx-2"
 				icon1F="fab fa-css3-alt icon-realisation mx-2"
-				link="https://pomodoro-feca0.web.app/"
+				link1="https://pomodoro-feca0.web.app/"
 				source1="./images/pomodoroApp.png"
 			/>
 
