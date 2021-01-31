@@ -39,6 +39,8 @@ function Contact() {
 
 						<div className="card-text mx-auto">
 							<a
+								target="_blank"
+								rel=" noopener noreferrer"
 								className="btn btn-outline-primary my-3"
 								href={t("resume.1")}>
 								{t("resume.2")}
