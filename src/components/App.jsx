@@ -38,14 +38,14 @@ function App() {
 				dateF="Oct 2019 - Juillet 2020"
 				titleF={t("formation.1")}
 				description={t("formation.2")}
-				link="http://www.greta-92.fr/1-formations-en-web-communication-et-chaine-graphique/35790-titre-professionnel-developpeur-web-et-web-mobile-formation-conventionnee-11"
+				link="http://www.greta-92.fr/1-formations-tous-secteurs/36737-titre-professionnel-developpeur-web-et-web-mobile-formation-conventionnee-4"
 			/>
 			<Formation
 				subtitle="Greta"
 				dateF="Dec 2019 - Jan 2020"
 				titleF="Photoshop/Illustrator"
 				description={t("formation.3")}
-				link="http://www.greta-92.fr/1-formations-en-web-communication-et-chaine-graphique/35790-titre-professionnel-developpeur-web-et-web-mobile-formation-conventionnee-11"
+				link="http://www.greta-92.fr/1-formations-tous-secteurs/35762-webdesigner-certification-tosa-photoshop-formation-conventionnee-5"
 			/>
 			<Formation
 				subtitle="Lonsdale Institute"

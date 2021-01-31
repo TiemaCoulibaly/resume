@@ -10,6 +10,8 @@ function Formation(props) {
 					<h3>{props.subtitle}</h3>
 					<p id="dateF">{props.dateF}</p>
 					<a
+						target="_blank"
+						rel=" noopener noreferrer"
 						href={props.link}
 						className="btn btn-md btn-outline-warning">
 						{t("readmore.1")}
