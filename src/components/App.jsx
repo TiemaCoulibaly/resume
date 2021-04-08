@@ -18,20 +18,19 @@ function App() {
 		<div>
 			<Header />
 			<Divider />
-
 			<Profil />
-			<Espaceur />
+			<Espaceur /> @include border-grey();
 			<Bandeau />
 			<Divider />
 			<Espaceur />
 			<Title id="formation" name={t("title.1")} />
 			<Espaceur />
 			<Formation
-				subtitle="Simplon.co"
-				dateF="2020 - 2021"
+				subtitle="Dawan"
+				dateF="Mars 2021 - Juin2021"
 				titleF={t("formation.8")}
 				description={t("formation.9")}
-				link="https://simplon.co/formation/concepteur-developpeur-d-applications/12"
+				link="https://www.dawan.fr/"
 			/>
 			<Formation
 				subtitle="Greta"
@@ -61,7 +60,6 @@ function App() {
 				description={t("formation.7")}
 				link="https://www.lonsdaleinstitute.edu.au/courses/certificate-iv-business/"
 			/>
-
 			<Espaceur />
 			<Competence />
 			<Espaceur />
@@ -82,7 +80,6 @@ function App() {
 				link1="https://cryptic-cliffs-02336.herokuapp.com/"
 			/>
 			<Espaceur />
-
 			<Realisation
 				title="Social CatchUp"
 				icon="fab fa-html5 icon-realisation mx-2"
@@ -107,10 +104,8 @@ function App() {
 				link1="https://pomodoro-feca0.web.app/"
 				source1="./images/pomodoroApp.png"
 			/>
-
 			<Espaceur />
 			<Divider />
-
 			<Contact />
 			<Footer />
 		</div>

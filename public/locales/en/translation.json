@@ -1,56 +1,54 @@
 {
-  "bouton":{
-    "1": "FRENCH",
-    "2": "ENGLISH"
-  },
-  "dev":{
-    "1":"Web Developer",
-    "2":"IT Passionate",
-    "3":"Website Creator"
-  },
-  "profil":{
-    "1": "About"
-  },
-  "profilSubtitle":{
-    "1":"Open to new challenges"
-  },
-   "about":{
-    "1": "About Me",
-    "2": "My desire to learn more, to improve my skills, my sense of relationships, I adapt easily to a team with the aim to share and consolidate all the knowledge gained so far."
-  },
-   
-  "details": {
-    "1": "Details",
-    "2":"Lastname: ",
-    "3":"Firstname: ",
-    "4":"City: "
-  },
-  "title":{
-    "1":"Educations",
-    "2":"Languages",
-    "3": "Projects"
-  },
-   "readmore":{
-    "1": "Read More"
-  },
-  "formation": {
-    "8": "Application Developer, Computer programming",
-    "9": "◇ Models, functional diagram ◇ Database, MCD, MPD ◇ Front & back-end development ◇ Mobile development ◇ Deployment of web applications ◇ SSH, Scrum, Peer review, Git, security",
-    "1": "Web Developer",
-    "2": "◇ Develop the front-end of a web application ◇ Create a web user interface ◇ Develop a dynamic web user interface ◇ Create a user interface with a content management or e-commerce solution  ◇ Develop the back-end of a web application ◇ Create a database Develop data access components ◇ Develop and implement components in a content management or e-commerce application",
-    "3":"◇ Set up Photoshop and explore Bridge ◇ Select and crop parts of an image ◇ Perform advanced retouching with the right tools Finely correcting the chroma of an image Manage documents with many layers Improve productivity",
-    "4":"Diploma of Business (Australia)",
-    "5":"◇ Manage recruitment selection and induction processesElective ◇ Manage programmes that promote personal effectivenessElective ◇ Manage personal work priorities and professional developmentElective Undertake project workElective ◇ Manage riskElective Manage people performanceElective ◇ Manage quality customer serviceElective ◇ Identify and evaluate marketing opportunities Elective",
-    "6":"Certificat IV in Business (Australia)",
-    "7": "◇ Implement, monitor WHS policies, procedures and programs to meet legislative requirements ◇ Promote innovation in a team environment Develop teams and individuals ◇ Organise meetings Promote products and services ◇ Analyse and present research information Make a presentation Address customer needs ◇ Organise business travel Undertake marketing activities" 
-  },
-  "quote": {
-    "1": " « If you can't explain the concept in a simple way, it's because you haven't understood it well » (Richard Feynam)"
-  },
-  "resume":{
-    "1": "./images/resume_en.pdf",
-    "2": "My Resume"
-  }
+	"bouton": {
+		"1": "FRENCH",
+		"2": "ENGLISH"
+	},
+	"dev": {
+		"1": "Web Developer",
+		"2": "IT Passionate",
+		"3": "Website Creator"
+	},
+	"profil": {
+		"1": "About"
+	},
+	"profilSubtitle": {
+		"1": "Open to new challenges"
+	},
+	"about": {
+		"1": "About Me",
+		"2": "My desire to learn more, to improve my skills, my sense of relationships, I adapt easily to a team with the aim to share and consolidate all the knowledge gained so far."
+	},
 
-
+	"details": {
+		"1": "Details",
+		"2": "Lastname: ",
+		"3": "Firstname: ",
+		"4": "City: "
+	},
+	"title": {
+		"1": "Educations",
+		"2": "Languages",
+		"3": "Projects"
+	},
+	"readmore": {
+		"1": "Read More"
+	},
+	"formation": {
+		"8": "Web Developer Front-End",
+		"9": " ◇  Javascript/Ecmascript  ◇ Bootstrap ◇ jQuery ◇ Front-End NodeJS  ◇  React.js ◇ Vue.js ◇ Angular",
+		"1": "Web Developer",
+		"2": "◇ Develop the front-end of a web application ◇ Create a web user interface ◇ Develop a dynamic web user interface ◇ Create a user interface with a content management or e-commerce solution  ◇ Develop the back-end of a web application ◇ Create a database Develop data access components ◇ Develop and implement components in a content management or e-commerce application",
+		"3": "◇ Set up Photoshop and explore Bridge ◇ Select and crop parts of an image ◇ Perform advanced retouching with the right tools Finely correcting the chroma of an image Manage documents with many layers Improve productivity",
+		"4": "Diploma of Business (Australia)",
+		"5": "◇ Manage recruitment selection and induction processesElective ◇ Manage programmes that promote personal effectivenessElective ◇ Manage personal work priorities and professional developmentElective Undertake project workElective ◇ Manage riskElective Manage people performanceElective ◇ Manage quality customer serviceElective ◇ Identify and evaluate marketing opportunities Elective",
+		"6": "Certificat IV in Business (Australia)",
+		"7": "◇ Implement, monitor WHS policies, procedures and programs to meet legislative requirements ◇ Promote innovation in a team environment Develop teams and individuals ◇ Organise meetings Promote products and services ◇ Analyse and present research information Make a presentation Address customer needs ◇ Organise business travel Undertake marketing activities"
+	},
+	"quote": {
+		"1": " « If you can't explain the concept in a simple way, it's because you haven't understood it well » (Richard Feynam)"
+	},
+	"resume": {
+		"1": "./images/Tiema_Coulibaly_CV.pdf",
+		"2": "My Resume"
+	}
 }
