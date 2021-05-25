@@ -7,25 +7,52 @@ function Profil() {
 	const useStyles = makeStyles((root) => ({
 		container: {
 			textAlign: "center",
+			[root.breakpoints.down("md")]: {
+				fontSize: "40px",
+			},
 		},
 		titleContainer: {
 			margin: "10px",
+		},
+		titleh2: {
+			[root.breakpoints.down("md")]: {
+				fontSize: "70px",
+			},
 		},
 		profilContainer: {
 			textAlign: "center",
 			display: "flex",
 			justifyContent: "space-around",
+			[root.breakpoints.down("md")]: {
+				display: "block",
+			},
 		},
 		about: {
 			width: "400px",
+			[root.breakpoints.down("md")]: {
+				width: "1000px",
+				padding: "0px 50px 0px",
+			},
 		},
 
 		details: {
 			width: "400px",
 			paddingRight: "150px",
+			[root.breakpoints.down("md")]: {
+				width: "1000px",
+				padding: "0px 50px 0px",
+			},
+		},
+		titleh3: {
+			[root.breakpoints.down("md")]: {
+				fontSize: "60px",
+			},
 		},
 		iconContainer: {
 			fontSize: "30px",
+			[root.breakpoints.down("md")]: {
+				fontSize: "60px",
+			},
 		},
 		icon: {
 			color: "#fad02c",
@@ -37,7 +64,7 @@ function Profil() {
 		<div>
 			<section className={classes.container}>
 				<div className={classes.titleContainer}>
-					<h2>{t("profil.1")}</h2>
+					<h2 className={classes.titleh2}>{t("profil.1")}</h2>
 					<p>
 						<em>{t("profilSubtitle.1")}</em>
 					</p>
@@ -46,7 +73,7 @@ function Profil() {
 
 				<div className={classes.profilContainer}>
 					<div className={classes.about}>
-						<h3>{t("about.1")}</h3>
+						<h3 className={classes.titleh3}>{t("about.1")}</h3>
 						<p>{t("about.2")}</p>
 					</div>
 					<div>
@@ -60,7 +87,7 @@ function Profil() {
 						/>
 					</div>
 					<div className={classes.details}>
-						<h3>{t("details.1")}</h3>
+						<h3 className={classes.titleh3}>{t("details.1")}</h3>
 						<p>
 							<strong>{t("details.2")} </strong>Coulibaly
 						</p>

@@ -19,7 +19,7 @@ function Header() {
 		container: {
 			height: "50vh",
 			[root.breakpoints.down("md")]: {
-				height: "100vh",
+				height: "50vh",
 			},
 			[root.breakpoints.down("xs")]: {
 				height: "50vh",
@@ -30,9 +30,9 @@ function Header() {
 			justifyContent: "space-between",
 		},
 		btnIcon: {
-			fontSize: 25,
+			fontSize: "25px",
 			[root.breakpoints.down("md")]: {
-				fontSize: 40,
+				fontSize: "60px",
 			},
 		},
 
@@ -41,10 +41,10 @@ function Header() {
 			marginTop: "10vh",
 			marginBottom: "5vh",
 			[root.breakpoints.down("xs")]: {
-				marginTop: "17vh",
+				marginTop: "7vh",
 			},
 			[root.breakpoints.down("md")]: {
-				marginTop: "30vh",
+				marginTop: "15vh",
 			},
 		},
 		btnFrench: {

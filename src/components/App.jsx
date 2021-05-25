@@ -19,7 +19,7 @@ function App() {
 			<Header />
 			<Divider />
 			<Profil />
-			<Espaceur /> @include border-grey();
+			<Espaceur />
 			<Bandeau />
 			<Divider />
 			<Espaceur />
