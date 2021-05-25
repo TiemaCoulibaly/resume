@@ -116,11 +116,6 @@ section #formation {
 }
 /* end of formation section */
 
-/* competence section */
-/* .ico {
-	font-size: 60px;
-} */
-
 /* end of competence */
 
 /*------realisation section ---------*/
@@ -134,27 +129,7 @@ section #formation {
 	opacity: 0.7;
 	transform: scale(1.1);
 }
-@media (max-width: 576px) {
-	.card-body > .fab {
-		font-size: 90px;
-		height: 70px;
-	}
-}
-@media (min-width: 768px) {
-}
-/* #icon-realisation {
-	background: #fad02c;
-	color: black;
-	position: absolute;
-	top: 0px;
-	right: 0px;
-	width: 30px;
-	height: 30px;
-	border-radius: 0.5rem;
-} */
-/* #card {
-	background-color: white;
-} */
+
 .icon-realisation {
 	font-size: 40px;
 }
@@ -166,24 +141,7 @@ section #formation {
 	display: flex;
 	font-size: 15px;
 }
-h5 .contact-icon {
-	animation: bounced 5s ease-in-out infinite;
-	color: var(--secondaryColor);
-}
-/* #contact {
-	background-color: var(--mainDark);
-} */
-#contact-title {
-	color: var(--mainWhite);
-}
-#bcolor {
-	border-bottom: 2px solid #fad02c;
-}
-/* maps */
-iframe {
-	border-radius: 10px;
-	border: 4px solid #fad02c;
-}
+
 /* end of contact section  */
 
 /* Footer section */
