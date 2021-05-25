@@ -1,16 +1,30 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import { makeStyles } from "@material-ui/core";
 
 function Contact() {
 	const { t } = useTranslation();
+	const useStyles = makeStyles((root) => ({
+		container: {
+			textAlign: "center",
+			backgroundColor: "#0f084b",
+		},
+		titleh2: {
+			color: "white",
+		},
+		card: {
+			backgroundColor: "white",
+		},
+	}));
+	const classes = useStyles();
 	return (
-		<section id="contact" className="container-fluid">
-			<h2 id="contact-title" className="text-center">
-				Contact
-			</h2>
+		<section className={classes.container}>
+			<h2 className={classes.titleh2}>Contact</h2>
 			<hr className="line mx-auto"></hr>
 			<div className="row">
-				<div className="card mx-auto my-5" style={{ width: "500px" }}>
+				<div
+					className={`${classes.card} mx-auto my-5`}
+					style={{ width: "500px" }}>
 					<div className="card-img-top" alt="Contact">
 						<iframe
 							title="map"

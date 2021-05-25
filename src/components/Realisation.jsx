@@ -5,12 +5,12 @@ import { makeStyles } from "@material-ui/core";
 function Realisation(props) {
 	const useStyles = makeStyles((root) => ({
 		container: {
-			padding: "50px 200px 50px",
+			padding: "70px",
 		},
 		card: {
 			width: "18rem",
 			[root.breakpoints.down("md")]: {
-				width: "40rem",
+				width: "53rem",
 			},
 		},
 		realisationContainer: {

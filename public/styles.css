@@ -170,9 +170,9 @@ h5 .contact-icon {
 	animation: bounced 5s ease-in-out infinite;
 	color: var(--secondaryColor);
 }
-#contact {
+/* #contact {
 	background-color: var(--mainDark);
-}
+} */
 #contact-title {
 	color: var(--mainWhite);
 }
