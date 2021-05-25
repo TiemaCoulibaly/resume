@@ -94,7 +94,6 @@ header {
 #quote {
 	color: var(--mainWhite);
 	font-family: "Patrick Hand", cursive;
-	padding-top: 50px;
 }
 #profil-img {
 	border: 3px solid #fad02c;
@@ -125,24 +124,25 @@ section #formation {
 /* end of competence */
 
 /*------realisation section ---------*/
-.realisation-container {
-	background: var(--primaryColor);
-	border: 0.1rem solid #fad02c;
-	border-radius: 1rem;
 
-	/* overflow */
-	overflow: hidden;
-}
 .realisation-picture {
-	width: 100%;
-	display: block;
+	/* width: 100%;
+	display: block; */
 	transition: var(--mainTransition);
 }
 .realisation-container:hover .realisation-picture {
 	opacity: 0.7;
 	transform: scale(1.1);
 }
-#icon-realisation {
+@media (max-width: 576px) {
+	.card-body > .fab {
+		font-size: 90px;
+		height: 70px;
+	}
+}
+@media (min-width: 768px) {
+}
+/* #icon-realisation {
 	background: #fad02c;
 	color: black;
 	position: absolute;
@@ -151,10 +151,10 @@ section #formation {
 	width: 30px;
 	height: 30px;
 	border-radius: 0.5rem;
-}
-#card {
+} */
+/* #card {
 	background-color: white;
-}
+} */
 .icon-realisation {
 	font-size: 40px;
 }

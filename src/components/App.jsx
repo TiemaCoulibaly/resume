@@ -11,9 +11,21 @@ import Divider from "./Divider";
 import Bandeau from "./Bandeau";
 import Espaceur from "./Espaceur";
 import { useTranslation } from "react-i18next";
+import { makeStyles } from "@material-ui/core";
 
 function App() {
 	const { t } = useTranslation();
+	const useStyles = makeStyles((root) => ({
+		realisation: {
+			display: "flex",
+			flexWrap: "wrap",
+			justifyContent: "center",
+			[root.breakpoints.down("md")]: {
+				display: "block",
+			},
+		},
+	}));
+	const classes = useStyles();
 	return (
 		<div>
 			<Header />
@@ -67,43 +79,51 @@ function App() {
 			<Divider />
 			<Espaceur />
 			<Title name={t("title.3")} id="realisation" />
-			<Realisation
-				title="Espace Gambon"
-				icon="fab fa-wordpress icon-realisation mx-2"
-				iconF="fab fa-php icon-realisation mx-2"
-				source="./images/espace.png"
-				link="https://espace-gambon.fr/"
-				title1="ToDo List"
-				icon1="fab fa-react icon-realisation mx-2"
-				description1="React js"
-				source1="./images/todo.png"
-				link1="https://cryptic-cliffs-02336.herokuapp.com/"
-			/>
-			<Espaceur />
-			<Realisation
-				title="Social CatchUp"
-				icon="fab fa-html5 icon-realisation mx-2"
-				iconF="fab fa-css3-alt icon-realisation mx-2"
-				iconS="fab fa-js-square icon-realisation mx-2"
-				source="./images/social1.png"
-				link="http://makeitdigital.ml/"
-				title1="Disability Provider"
-				icon1="fab fa-wordpress icon-realisation mx-2"
-				source1="./images/disabilityprovider.png"
-				link1="https://mydisabilityprovider.com.au/"
-			/>
-			<Realisation
-				title="Search Movie App"
-				icon="fab fa-react icon-realisation mx-2"
-				iconF="fab fa-css3-alt icon-realisation mx-2"
-				source="./images/movieApp.png"
-				link="https://movieapp-99013.web.app/"
-				title1="Pomodoro App"
-				icon1="fab fa-react icon-realisation mx-2"
-				icon1F="fab fa-css3-alt icon-realisation mx-2"
-				link1="https://pomodoro-feca0.web.app/"
-				source1="./images/pomodoroApp.png"
-			/>
+			<div className={classes.realisation}>
+				<Realisation
+					title="Espace Gambon"
+					icon="fab fa-wordpress icon-realisation mx-2"
+					iconF="fab fa-php icon-realisation mx-2"
+					source="./images/espace.png"
+					link="https://espace-gambon.fr/"
+				/>
+				<Realisation
+					title="ToDo List"
+					icon="fab fa-react icon-realisation mx-2"
+					description="React js"
+					source="./images/todo.png"
+					link="https://cryptic-cliffs-02336.herokuapp.com/"
+				/>
+
+				<Realisation
+					title="Social CatchUp"
+					icon="fab fa-html5 icon-realisation mx-2"
+					iconF="fab fa-css3-alt icon-realisation mx-2"
+					iconS="fab fa-js-square icon-realisation mx-2"
+					source="./images/social1.png"
+					link="http://makeitdigital.ml/"
+				/>
+				<Realisation
+					title="Disability Provider"
+					icon="fab fa-wordpress icon-realisation mx-2"
+					source="./images/disabilityprovider.png"
+					link="https://mydisabilityprovider.com.au/"
+				/>
+				<Realisation
+					title="Search Movie App"
+					icon="fab fa-react icon-realisation mx-2"
+					iconF="fab fa-css3-alt icon-realisation mx-2"
+					source="./images/movieApp.png"
+					link="https://movieapp-99013.web.app/"
+				/>
+				<Realisation
+					title="Pomodoro App"
+					icon="fab fa-react icon-realisation mx-2"
+					iconF="fab fa-css3-alt icon-realisation mx-2"
+					link="https://pomodoro-feca0.web.app/"
+					source="./images/pomodoroApp.png"
+				/>
+			</div>
 			<Espaceur />
 			<Divider />
 			<Contact />

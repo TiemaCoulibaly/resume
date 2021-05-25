@@ -1,74 +1,89 @@
 import React from "react";
 import LinkIcon from "@material-ui/icons/Link";
-import Espaceur from "./Espaceur";
+
+import { makeStyles } from "@material-ui/core";
 function Realisation(props) {
+	const useStyles = makeStyles((root) => ({
+		container: {
+			padding: "50px 200px 50px",
+		},
+		card: {
+			width: "18rem",
+			[root.breakpoints.down("md")]: {
+				width: "40rem",
+			},
+		},
+		realisationContainer: {
+			border: "0.1rem solid #fad02c",
+			borderRadius: "1rem",
+			overflow: "hidden",
+		},
+		icon: {
+			backgroundColor: "#fad02c",
+			color: "black",
+			width: "30px",
+			height: "30px",
+			borderRadius: "0.3rem",
+			[root.breakpoints.down("md")]: {
+				width: "60px",
+				height: "60px",
+			},
+		},
+		picture: {
+			display: "block",
+			width: "100%",
+		},
+
+		cardBody: {
+			textAlign: "center",
+			[root.breakpoints.down("md")]: {
+				fontSize: "100px",
+			},
+		},
+		cardTitle: {
+			[root.breakpoints.down("md")]: {
+				fontSize: "60px",
+			},
+		},
+		techno: {
+			[root.breakpoints.down("md")]: {
+				fontSize: "80px",
+			},
+		},
+	}));
+	const classes = useStyles();
 	return (
-		<section id="realisation" className="container">
-			<Espaceur />
-			<Espaceur />
+		<section className={classes.container}>
+			<article className={classes.card}>
+				<div className={classes.realisationContainer}>
+					<a
+						href={props.link}
+						target="_blank"
+						rel=" noopener noreferrer">
+						<img
+							src={props.source}
+							alt="peoples"
+							className={classes.picture}
+						/>
+						<LinkIcon
+							className={classes.icon}
+							variant="contained"
+						/>
+					</a>
 
-			<div className="d-flex justify-content-center">
-				<div className="row">
-					<div className="col col-sm-6">
-						<article
-							className="card mx-5 my-3"
-							style={{ width: "18rem" }}>
-							<div className="realisation-container">
-								<a
-									target="_blank"
-									rel=" noopener noreferrer"
-									href={props.link}>
-									<img
-										src={props.source}
-										alt="peoples"
-										className="card-img-top realisation-picture"
-									/>
-									<LinkIcon id="icon-realisation" />
-								</a>
-								<div id="card" className="card-body">
-									<h3 className="card-title">
-										{props.title}
-									</h3>
-									<p className="card-text text-center">
-										<i className={props.icon}></i>
-										<i className={props.iconF}></i>
-										<i className={props.iconS}></i>
-									</p>
-								</div>
-							</div>
-						</article>
-					</div>
-
-					<div className="col col-sm-6">
-						<article
-							className="card mx-5 my-3"
-							style={{ width: "18rem" }}>
-							<div className="realisation-container">
-								<a
-									target="_blank"
-									rel=" noopener noreferrer"
-									href={props.link1}>
-									<img
-										src={props.source1}
-										alt="peoples"
-										className="card-img-top realisation-picture"
-									/>
-									<LinkIcon id="icon-realisation" />
-								</a>
-								<div id="card" className="card-body">
-									<h3 className="card-title">
-										{props.title1}
-									</h3>
-									<p className="card-text">
-										<i className={props.icon1}></i>
-										<i className={props.icon1F}></i>
-									</p>
-								</div>
-							</div>
-						</article>
+					<div id="card" className={classes.cardBody}>
+						<h3 className={classes.cardTitle}>{props.title}</h3>
+						<p className={classes.techno}>
+							<i
+								className={`${classes.techno} ${props.icon}`}></i>
+							<i
+								className={`${classes.techno} ${props.iconF}`}></i>
+							<i
+								className={`${classes.techno} ${props.iconS}`}></i>
+						</p>
 					</div>
 				</div>
-			</div>
+			</article>
 		</section>
 	);
 }
