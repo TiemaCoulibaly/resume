@@ -13,6 +13,8 @@ import Espaceur from "./Espaceur";
 import { useTranslation } from "react-i18next";
 import { makeStyles } from "@material-ui/core";
 
+import { RealisationList } from "../helpers/RealisationList";
+
 function App() {
 	const { t } = useTranslation();
 	const useStyles = makeStyles((root) => ({
@@ -80,49 +82,19 @@ function App() {
 			<Espaceur />
 			<Title name={t("title.3")} id="realisation" />
 			<div className={classes.realisation}>
-				<Realisation
-					title="Espace Gambon"
-					icon="fab fa-wordpress icon-realisation mx-2"
-					iconF="fab fa-php icon-realisation mx-2"
-					source="./images/espace.png"
-					link="https://espace-gambon.fr/"
-				/>
-				<Realisation
-					title="ToDo List"
-					icon="fab fa-react icon-realisation mx-2"
-					description="React js"
-					source="./images/todo.png"
-					link="https://cryptic-cliffs-02336.herokuapp.com/"
-				/>
-
-				<Realisation
-					title="Social CatchUp"
-					icon="fab fa-html5 icon-realisation mx-2"
-					iconF="fab fa-css3-alt icon-realisation mx-2"
-					iconS="fab fa-js-square icon-realisation mx-2"
-					source="./images/social1.png"
-					link="http://makeitdigital.ml/"
-				/>
-				<Realisation
-					title="Disability Provider"
-					icon="fab fa-wordpress icon-realisation mx-2"
-					source="./images/disabilityprovider.png"
-					link="https://mydisabilityprovider.com.au/"
-				/>
-				<Realisation
-					title="Search Movie App"
-					icon="fab fa-react icon-realisation mx-2"
-					iconF="fab fa-css3-alt icon-realisation mx-2"
-					source="./images/movieApp.png"
-					link="https://movieapp-99013.web.app/"
-				/>
-				<Realisation
-					title="Pomodoro App"
-					icon="fab fa-react icon-realisation mx-2"
-					iconF="fab fa-css3-alt icon-realisation mx-2"
-					link="https://pomodoro-feca0.web.app/"
-					source="./images/pomodoroApp.png"
-				/>
+				{RealisationList.map((realisationItem, key) => {
+					return (
+						<Realisation
+							key={key}
+							title={realisationItem.title}
+							icon={realisationItem.icon}
+							iconF={realisationItem.iconF}
+							iconS={realisationItem.iconS}
+							source={realisationItem.source}
+							link={realisationItem.link}
+						/>
+					);
+				})}
 			</div>
 			<Espaceur />
 			<Divider />

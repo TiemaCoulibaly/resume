@@ -2,7 +2,7 @@ import React from "react";
 import LinkIcon from "@material-ui/icons/Link";
 
 import { makeStyles } from "@material-ui/core";
-function Realisation(props) {
+function Realisation({ title, icon, iconF, iconS, source, link }) {
 	const useStyles = makeStyles((root) => ({
 		container: {
 			padding: "70px",
@@ -56,12 +56,9 @@ function Realisation(props) {
 		<section className={classes.container}>
 			<article className={classes.card}>
 				<div className={classes.realisationContainer}>
-					<a
-						href={props.link}
-						target="_blank"
-						rel=" noopener noreferrer">
+					<a href={link} target="_blank" rel=" noopener noreferrer">
 						<img
-							src={props.source}
+							src={source}
 							alt="peoples"
 							className={classes.picture}
 						/>
@@ -72,14 +69,11 @@ function Realisation(props) {
 					</a>
 
 					<div id="card" className={classes.cardBody}>
-						<h3 className={classes.cardTitle}>{props.title}</h3>
+						<h3 className={classes.cardTitle}>{title}</h3>
 						<p className={classes.techno}>
-							<i
-								className={`${classes.techno} ${props.icon}`}></i>
-							<i
-								className={`${classes.techno} ${props.iconF}`}></i>
-							<i
-								className={`${classes.techno} ${props.iconS}`}></i>
+							<i className={`${classes.techno} ${icon}`}></i>
+							<i className={`${classes.techno} ${iconF}`}></i>
+							<i className={`${classes.techno} ${iconS}`}></i>
 						</p>
 					</div>
 				</div>
