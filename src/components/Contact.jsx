@@ -23,6 +23,7 @@ function Contact() {
 		card: {
 			width: "500px",
 			backgroundColor: "white",
+			borderRadius: "10px",
 			[root.breakpoints.down("md")]: {
 				width: "53rem",
 			},

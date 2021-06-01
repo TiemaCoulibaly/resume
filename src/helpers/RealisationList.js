@@ -24,8 +24,8 @@ export const RealisationList = [
 	},
 	{
 		title: "Disability Provider",
-		icon: "fab fa-php icon-realisation mx-2",
-		iconF: "fab fa-wordpress icon-realisation mx-2",
+		icon: "fab fa-wordpress icon-realisation mx-2",
+		iconF: "fab fa-php icon-realisation mx-2",
 		source: "./images/disabilityprovider.png",
 		link: "https://mydisabilityprovider.com.au/",
 	},
@@ -44,5 +44,13 @@ export const RealisationList = [
 		iconS: "fab fa-react icon-realisation mx-2",
 		link: "https://pomodoro-feca0.web.app/",
 		source: "./images/pomodoroApp.png",
+	},
+	{
+		title: "Cryptocurrency App",
+		icon: "fab fa-html5 icon-realisation mx-2",
+		iconF: "fab fa-css3-alt icon-realisation mx-2",
+		iconS: "fab fa-react icon-realisation mx-2",
+		link: "https://github.com/TiemaCoulibaly/Crypto-project",
+		source: "./images/crystal.png",
 	},
 ];
