@@ -80,7 +80,7 @@ function Profil() {
 						<img
 							className={classes.img}
 							id="profil-img"
-							src="./images/profil.png"
+							src="./images/profile.png"
 							alt="Tiema Coulibaly"
 							width="200"
 							height="200"
