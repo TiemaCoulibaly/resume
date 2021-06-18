@@ -90,8 +90,10 @@ function App() {
 							icon={realisationItem.icon}
 							iconF={realisationItem.iconF}
 							iconS={realisationItem.iconS}
+							iconL={realisationItem.iconL}
 							source={realisationItem.source}
 							link={realisationItem.link}
+							github={realisationItem.github}
 						/>
 					);
 				})}

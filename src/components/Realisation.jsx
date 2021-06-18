@@ -1,8 +1,19 @@
 import React from "react";
-import LinkIcon from "@material-ui/icons/Link";
+
+import Link from "@material-ui/core/Link";
+import Box from "@material-ui/core/Box";
 
 import { makeStyles } from "@material-ui/core";
-function Realisation({ title, icon, iconF, iconS, source, link }) {
+function Realisation({
+	title,
+	icon,
+	iconF,
+	iconS,
+	iconL,
+	source,
+	link,
+	github,
+}) {
 	const useStyles = makeStyles((root) => ({
 		container: {
 			padding: "70px",
@@ -16,17 +27,39 @@ function Realisation({ title, icon, iconF, iconS, source, link }) {
 		realisationContainer: {
 			border: "0.1rem solid #fad02c",
 			borderRadius: "1rem",
-			overflow: "hidden",
 		},
+
 		icon: {
-			backgroundColor: "#fad02c",
+			backgroundImage: "linear-gradient(to left, 	#ffe787, #fad02c)",
+
 			color: "black",
-			width: "30px",
-			height: "30px",
+			padding: "10px",
+			margin: "10px",
 			borderRadius: "0.3rem",
+			boxShadow: "2px 2px 2px black",
 			[root.breakpoints.down("md")]: {
-				width: "60px",
-				height: "60px",
+				padding: "20px",
+				fontSize: "40px",
+				margin: "10px",
+				borderRadius: "0.5rem",
+				boxShadow: "4px 4px 4px black",
+			},
+		},
+
+		github: {
+			backgroundImage: "linear-gradient(to right, #c2e7d9, #209cee)",
+			color: "black",
+			padding: "10px",
+			margin: "10px",
+			borderRadius: "0.3rem",
+			boxShadow: "2px 2px 2px black",
+
+			[root.breakpoints.down("md")]: {
+				padding: "20px",
+				fontSize: "40px",
+				margin: "10px",
+				borderRadius: "0.5rem",
+				boxShadow: "4px 4px 4px black",
 			},
 		},
 		picture: {
@@ -62,11 +95,31 @@ function Realisation({ title, icon, iconF, iconS, source, link }) {
 							alt="peoples"
 							className={classes.picture}
 						/>
-						<LinkIcon
-							className={classes.icon}
-							variant="contained"
-						/>
 					</a>
+					<Box display="flex" justifyContent="space-around">
+						{link ? (
+							<Link
+								href={link}
+								target="_blank"
+								rel=" noopener noreferrer"
+								underline="none"
+								className={classes.icon}
+								variant="contained">
+								Project
+							</Link>
+						) : null}
+
+						{github ? (
+							<Link
+								href={github}
+								target="_blank"
+								rel=" noopener noreferrer"
+								underline="none"
+								className={classes.github}>
+								Github
+							</Link>
+						) : null}
+					</Box>
 
 					<div id="card" className={classes.cardBody}>
 						<h3 className={classes.cardTitle}>{title}</h3>
@@ -74,6 +127,7 @@ function Realisation({ title, icon, iconF, iconS, source, link }) {
 							<i className={`${classes.techno} ${icon}`}></i>
 							<i className={`${classes.techno} ${iconF}`}></i>
 							<i className={`${classes.techno} ${iconS}`}></i>
+							<i className={`${classes.techno} ${iconL}`}></i>
 						</p>
 					</div>
 				</div>

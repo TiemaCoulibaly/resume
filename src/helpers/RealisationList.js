@@ -13,6 +13,7 @@ export const RealisationList = [
 		iconS: "fab fa-react icon-realisation mx-2",
 		source: "./images/todo.png",
 		link: "https://cryptic-cliffs-02336.herokuapp.com/",
+		github: "https://github.com/TiemaCoulibaly/todo_list_v2",
 	},
 	{
 		title: "Social CatchUp",
@@ -21,6 +22,7 @@ export const RealisationList = [
 		iconS: "fab fa-js-square icon-realisation mx-2",
 		source: "./images/social1.png",
 		link: "http://makeitdigital.ml/",
+		github: "https://github.com/TiemaCoulibaly/Social-Catch-up",
 	},
 	{
 		title: "Disability Provider",
@@ -36,6 +38,7 @@ export const RealisationList = [
 		iconS: "fab fa-react icon-realisation mx-2",
 		source: "./images/movieApp.png",
 		link: "https://movieapp-99013.web.app/",
+		github: "https://github.com/TiemaCoulibaly/react_search-movie",
 	},
 	{
 		title: "Pomodoro App",
@@ -44,13 +47,16 @@ export const RealisationList = [
 		iconS: "fab fa-react icon-realisation mx-2",
 		link: "https://pomodoro-feca0.web.app/",
 		source: "./images/pomodoroApp.png",
+		github: "https://github.com/TiemaCoulibaly/pomodoro",
 	},
 	{
 		title: "Cryptocurrency App",
 		icon: "fab fa-html5 icon-realisation mx-2",
 		iconF: "fab fa-css3-alt icon-realisation mx-2",
 		iconS: "fab fa-react icon-realisation mx-2",
-		link: "https://github.com/TiemaCoulibaly/Crypto-project",
+		iconL: "fab fa-node icon-realisation mx-2",
+
 		source: "./images/crystal.png",
+		github: "https://github.com/TiemaCoulibaly/Crypto-project",
 	},
 ];
