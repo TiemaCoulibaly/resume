@@ -48,11 +48,12 @@ function App() {
 				display: "block",
 			},
 		},
-		switch: {
+		formControl: {
 			display: "flex",
 			justifyContent: "center",
 			margin: "20px",
 		},
+
 		light: {
 			color: "#fad02c",
 		},
@@ -67,7 +68,7 @@ function App() {
 				<Header />
 				<Divider />
 				<FormControlLabel
-					className={classes.switch}
+					className={classes.formControl}
 					value="Dark Mode"
 					control={
 						<Switch

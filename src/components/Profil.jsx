@@ -15,6 +15,7 @@ function Profil() {
 			margin: "10px",
 		},
 		titleh2: {
+			fontWeight: "800",
 			[root.breakpoints.down("md")]: {
 				fontSize: "70px",
 			},
@@ -49,9 +50,10 @@ function Profil() {
 			},
 		},
 		iconContainer: {
-			fontSize: "30px",
+			margin: "40px",
+			fontSize: "50px",
 			[root.breakpoints.down("md")]: {
-				fontSize: "60px",
+				fontSize: "90px",
 			},
 		},
 		icon: {
@@ -77,28 +79,6 @@ function Profil() {
 						<p>{t("about.2")}</p>
 					</div>
 					<div>
-						<img
-							className={classes.img}
-							id="profil-img"
-							src="./images/profile.png"
-							alt="Tiema Coulibaly"
-							width="200"
-							height="200"
-						/>
-					</div>
-					<div className={classes.details}>
-						<h3 className={classes.titleh3}>{t("details.1")}</h3>
-						<p>
-							<strong>{t("details.2")} </strong>Coulibaly
-						</p>
-						<p>
-							<strong>{t("details.3")} </strong>Tiema
-						</p>
-						<p>
-							<strong>{t("details.4")} </strong>Paris
-						</p>
-						<br></br>
-
 						<p className={classes.iconContainer}>
 							<a
 								target="_blank"
@@ -115,6 +95,36 @@ function Profil() {
 								<i className="fab fa-linkedin"></i>
 							</a>
 						</p>
+					</div>
+					<div className={classes.details}>
+						<h3 className={classes.titleh3}>{t("details.1")}</h3>
+						<p>
+							<strong>{t("details.2")} </strong>Coulibaly
+						</p>
+						<p>
+							<strong>{t("details.3")} </strong>Tiema
+						</p>
+						<p>
+							<strong>{t("details.4")} </strong>Paris
+						</p>
+						<br></br>
+
+						{/* <p className={classes.iconContainer}>
+							<a
+								target="_blank"
+								rel=" noopener noreferrer"
+								className={classes.icon}
+								href="https://github.com/TiemaCoulibaly">
+								<i className="fab fa-github"></i>
+							</a>
+							<a
+								target="_blank"
+								rel=" noopener noreferrer"
+								className={classes.icon}
+								href="https://www.linkedin.com/in/tiema-coulibaly-063b94195/">
+								<i className="fab fa-linkedin"></i>
+							</a>
+						</p> */}
 					</div>
 				</div>
 			</section>

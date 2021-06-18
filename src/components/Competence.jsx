@@ -9,6 +9,7 @@ function Competence() {
 			textAlign: "center",
 		},
 		title: {
+			fontWeight: "800",
 			[root.breakpoints.down("md")]: {
 				fontSize: "70px",
 			},
@@ -31,7 +32,7 @@ function Competence() {
 
 	const classes = useStyles();
 	return (
-		<div className="background-color">
+		<div className="background-color" id="competence">
 			<section className={classes.container}>
 				<h2 className={classes.title}>{t("title.2")}</h2>
 				<hr className="line mx-auto mb-5"></hr>

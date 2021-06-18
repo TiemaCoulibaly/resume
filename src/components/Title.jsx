@@ -4,6 +4,7 @@ import { makeStyles } from "@material-ui/core";
 function Title(props) {
 	const useStyles = makeStyles((root) => ({
 		title: {
+			fontWeight: "800",
 			[root.breakpoints.down("md")]: {
 				fontSize: "70px",
 			},

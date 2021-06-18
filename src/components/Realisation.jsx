@@ -25,7 +25,7 @@ function Realisation({
 			},
 		},
 		realisationContainer: {
-			border: "0.1rem solid #fad02c",
+			border: "1px solid #fad02c",
 			borderRadius: "1rem",
 		},
 

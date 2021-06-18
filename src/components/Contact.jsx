@@ -15,6 +15,7 @@ function Contact() {
 			},
 		},
 		titleh2: {
+			fontWeight: "800",
 			color: "white",
 			[root.breakpoints.down("md")]: {
 				fontSize: "70px",
@@ -59,7 +60,7 @@ function Contact() {
 	}));
 	const classes = useStyles();
 	return (
-		<section className={classes.container}>
+		<section className={classes.container} id="contact">
 			<h2 className={classes.titleh2}>Contact</h2>
 			<hr className="line mx-auto"></hr>
 
