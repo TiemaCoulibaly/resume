@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "./Header";
 import Profil from "./Profil";
 import Formation from "./Formation";
@@ -15,7 +15,29 @@ import { makeStyles } from "@material-ui/core";
 
 import { RealisationList } from "../helpers/RealisationList";
 
+import {
+	ThemeProvider,
+	CssBaseline,
+	createMuiTheme,
+	Switch,
+} from "@material-ui/core";
+import FormControlLabel from "@material-ui/core/FormControlLabel";
+
+import FlareIcon from "@material-ui/icons/Flare";
+import Brightness3Icon from "@material-ui/icons/Brightness3";
+
 function App() {
+	const [darkMode, setDarkMode] = useState(false);
+
+	const theme = createMuiTheme({
+		palette: {
+			type: darkMode ? "dark" : "light",
+		},
+	});
+	const handleDarkMode = () => {
+		setDarkMode(!darkMode);
+	};
+
 	const { t } = useTranslation();
 	const useStyles = makeStyles((root) => ({
 		realisation: {
@@ -26,83 +48,117 @@ function App() {
 				display: "block",
 			},
 		},
+		switch: {
+			display: "flex",
+			justifyContent: "center",
+			margin: "20px",
+		},
+		light: {
+			color: "#fad02c",
+		},
+		dark: {
+			color: "#209cee",
+		},
 	}));
 	const classes = useStyles();
 	return (
-		<div>
-			<Header />
-			<Divider />
-			<Profil />
-			<Espaceur />
-			<Bandeau />
-			<Divider />
-			<Espaceur />
-			<Title id="formation" name={t("title.1")} />
-			<Espaceur />
-			<Formation
-				subtitle="Dawan"
-				dateF="Mars 2021 - Juin2021"
-				titleF={t("formation.8")}
-				description={t("formation.9")}
-				link="https://www.dawan.fr/"
-			/>
-			<Formation
-				subtitle="Greta"
-				dateF="Oct 2019 - Juillet 2020"
-				titleF={t("formation.1")}
-				description={t("formation.2")}
-				link="http://www.greta-92.fr/1-formations-tous-secteurs/36737-titre-professionnel-developpeur-web-et-web-mobile-formation-conventionnee-4"
-			/>
-			<Formation
-				subtitle="Greta"
-				dateF="Dec 2019 - Jan 2020"
-				titleF="Photoshop/Illustrator"
-				description={t("formation.3")}
-				link="http://www.greta-92.fr/1-formations-tous-secteurs/35762-webdesigner-certification-tosa-photoshop-formation-conventionnee-5"
-			/>
-			<Formation
-				subtitle="Lonsdale Institute"
-				dateF="2015 - 2016"
-				titleF={t("formation.4")}
-				description={t("formation.5")}
-				link="https://www.lonsdaleinstitute.edu.au/courses/diploma-business/"
-			/>
-			<Formation
-				subtitle="Lonsdale Institute"
-				dateF="2014 - 2015"
-				titleF={t("formation.6")}
-				description={t("formation.7")}
-				link="https://www.lonsdaleinstitute.edu.au/courses/certificate-iv-business/"
-			/>
-			<Espaceur />
-			<Competence />
-			<Espaceur />
-			<Bandeau quote={t("quote.1")} />
-			<Divider />
-			<Espaceur />
-			<Title name={t("title.3")} id="realisation" />
-			<div className={classes.realisation}>
-				{RealisationList.map((realisationItem, key) => {
-					return (
-						<Realisation
-							key={key}
-							title={realisationItem.title}
-							icon={realisationItem.icon}
-							iconF={realisationItem.iconF}
-							iconS={realisationItem.iconS}
-							iconL={realisationItem.iconL}
-							source={realisationItem.source}
-							link={realisationItem.link}
-							github={realisationItem.github}
+		<ThemeProvider theme={theme}>
+			<CssBaseline>
+				<Header />
+				<Divider />
+				<FormControlLabel
+					className={classes.switch}
+					value="Dark Mode"
+					control={
+						<Switch
+							color="primary"
+							onChange={handleDarkMode}
+							value={darkMode}
+							size="medium"
 						/>
-					);
-				})}
-			</div>
-			<Espaceur />
-			<Divider />
-			<Contact />
-			<Footer />
-		</div>
+					}
+					label={
+						darkMode ? (
+							<Brightness3Icon className={classes.dark} />
+						) : (
+							<FlareIcon className={classes.light} />
+						)
+					}
+					labelPlacement="start"
+				/>
+
+				<Profil />
+				<Espaceur />
+				<Bandeau />
+				<Divider />
+				<Espaceur />
+				<Title id="formation" name={t("title.1")} />
+				<Espaceur />
+				<Formation
+					subtitle="Dawan"
+					dateF="Mars 2021 - Juin2021"
+					titleF={t("formation.8")}
+					description={t("formation.9")}
+					link="https://www.dawan.fr/"
+				/>
+				<Formation
+					subtitle="Greta"
+					dateF="Oct 2019 - Juillet 2020"
+					titleF={t("formation.1")}
+					description={t("formation.2")}
+					link="http://www.greta-92.fr/1-formations-tous-secteurs/36737-titre-professionnel-developpeur-web-et-web-mobile-formation-conventionnee-4"
+				/>
+				<Formation
+					subtitle="Greta"
+					dateF="Dec 2019 - Jan 2020"
+					titleF="Photoshop/Illustrator"
+					description={t("formation.3")}
+					link="http://www.greta-92.fr/1-formations-tous-secteurs/35762-webdesigner-certification-tosa-photoshop-formation-conventionnee-5"
+				/>
+				<Formation
+					subtitle="Lonsdale Institute"
+					dateF="2015 - 2016"
+					titleF={t("formation.4")}
+					description={t("formation.5")}
+					link="https://www.lonsdaleinstitute.edu.au/courses/diploma-business/"
+				/>
+				<Formation
+					subtitle="Lonsdale Institute"
+					dateF="2014 - 2015"
+					titleF={t("formation.6")}
+					description={t("formation.7")}
+					link="https://www.lonsdaleinstitute.edu.au/courses/certificate-iv-business/"
+				/>
+				<Espaceur />
+				<Competence />
+				<Espaceur />
+				<Bandeau quote={t("quote.1")} />
+				<Divider />
+				<Espaceur />
+				<Title name={t("title.3")} id="realisation" />
+				<div className={classes.realisation}>
+					{RealisationList.map((realisationItem, key) => {
+						return (
+							<Realisation
+								key={key}
+								title={realisationItem.title}
+								icon={realisationItem.icon}
+								iconF={realisationItem.iconF}
+								iconS={realisationItem.iconS}
+								iconL={realisationItem.iconL}
+								source={realisationItem.source}
+								link={realisationItem.link}
+								github={realisationItem.github}
+							/>
+						);
+					})}
+				</div>
+				<Espaceur />
+				<Divider />
+				<Contact />
+				<Footer />
+			</CssBaseline>
+		</ThemeProvider>
 	);
 }
 

@@ -17,6 +17,9 @@
 #root {
 	background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
 }
+body {
+	font-family: "Open Sans", sans-serif;
+}
 
 h3 {
 	color: var(--secondaryColor);
