@@ -91,7 +91,7 @@ function Profil() {
 								target="_blank"
 								rel=" noopener noreferrer"
 								className={classes.icon}
-								href="https://www.linkedin.com/in/tiema-coulibaly-063b94195/">
+								href="https://www.linkedin.com/in/tiema-coulibaly/">
 								<i className="fab fa-linkedin"></i>
 							</a>
 						</p>
