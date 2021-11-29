@@ -7,15 +7,6 @@ export const RealisationList = [
 		link: "https://espace-gambon.fr/",
 	},
 	{
-		title: "ToDo List",
-		icon: "fab fa-html5 icon-realisation mx-2",
-		iconF: "fab fa-css3-alt icon-realisation mx-2",
-		iconS: "fab fa-react icon-realisation mx-2",
-		source: "./images/todo.png",
-		link: "https://cryptic-cliffs-02336.herokuapp.com/",
-		github: "https://github.com/TiemaCoulibaly/todo_list_v2",
-	},
-	{
 		title: "Social CatchUp",
 		icon: "fab fa-html5 icon-realisation mx-2",
 		iconF: "fab fa-css3-alt icon-realisation mx-2",
