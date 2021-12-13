@@ -12,7 +12,6 @@ export const RealisationList = [
 		iconF: "fab fa-css3-alt icon-realisation mx-2",
 		iconS: "fab fa-js-square icon-realisation mx-2",
 		source: "./images/social1.png",
-		link: "http://makeitdigital.ml/",
 		github: "https://github.com/TiemaCoulibaly/Social-Catch-up",
 	},
 	{
