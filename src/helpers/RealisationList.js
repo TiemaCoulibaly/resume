@@ -7,20 +7,13 @@ export const RealisationList = [
 		link: "https://espace-gambon.fr/",
 	},
 	{
-		title: "Social CatchUp",
-		icon: "fab fa-html5 icon-realisation mx-2",
-		iconF: "fab fa-css3-alt icon-realisation mx-2",
-		iconS: "fab fa-js-square icon-realisation mx-2",
-		source: "./images/social1.png",
-		github: "https://github.com/TiemaCoulibaly/Social-Catch-up",
-	},
-	{
 		title: "Disability Provider",
 		icon: "fab fa-wordpress icon-realisation mx-2",
 		iconF: "fab fa-php icon-realisation mx-2",
 		source: "./images/disabilityprovider.png",
 		link: "https://mydisabilityprovider.com.au/",
 	},
+
 	{
 		title: "Search Movie App",
 		icon: "fab fa-html5 icon-realisation mx-2",
@@ -38,6 +31,15 @@ export const RealisationList = [
 		link: "https://pomodoro-feca0.web.app/",
 		source: "./images/pomodoroApp.png",
 		github: "https://github.com/TiemaCoulibaly/pomodoro",
+	},
+	{
+		title: "O-city Stade",
+		icon: "fab fa-html5 icon-realisation mx-2",
+		iconF: "fab fa-css3-alt icon-realisation mx-2",
+		iconS: "fab fa-react icon-realisation mx-2",
+		iconL: "fab fa-node icon-realisation mx-2",
+		source: "./images/ocity-screen.png",
+		github: "https://github.com/TiemaCoulibaly/ocity-stade",
 	},
 	{
 		title: "Cryptocurrency App",
