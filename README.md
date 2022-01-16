@@ -1,25 +1,16 @@
-## My Portfolio
+
+## Portfolio Front-End 💻
 
 https://tiema-resume.web.app/
 
-## Available Scripts
 
-In the project directory, you can run:
+## Technos
+[![made-with-react](https://img.shields.io/badge/-ReactJs-61DAFB?logo=react&logoColor=white)](https://www.javascript.com)
+![MUI](https://img.shields.io/badge/MUI-%230081CB.svg?style=for-the-badge&logo=material-ui&logoColor=white)
 
-### `npm start`
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+[![validator-HTML](https://camo.githubusercontent.com/64008cb7fb23c516c0e5264a91480eeac218f9fd3e18d2f09f12e3ef464866d1/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f5733432d76616c6964617465642d627269676874677265656e)](https://validator.w3.org/#validate_by_uri+with_options)
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Hosting provider
+![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase)(https://tiema-resume.web.app/)
