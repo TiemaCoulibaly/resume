@@ -30,7 +30,14 @@ h3 {
 h5 {
 	font-family: "Patrick Hand", cursive;
 }
-
+.about {
+	font-family: "Open Sans", sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+}
+strong {
+	border-bottom: 1px solid var(--mainDark);
+}
 /* ----------------------------------- */
 
 @keyframes bounced {

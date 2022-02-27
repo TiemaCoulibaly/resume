@@ -43,6 +43,7 @@ function Formation(props) {
 		},
 	}));
 	const classes = useStyles();
+	console.log("ee", props.description);
 	return (
 		<section className={classes.container}>
 			<div className={classes.left}>
@@ -53,7 +54,7 @@ function Formation(props) {
 					variant="outlined"
 					href={props.link}
 					target="_blank"
-					rel=" noopener noreferrer">
+					rel="noopener noreferrer">
 					{t("readmore.1")}
 				</Button>
 			</div>

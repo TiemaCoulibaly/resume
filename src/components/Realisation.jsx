@@ -4,6 +4,8 @@ import Link from "@material-ui/core/Link";
 import Box from "@material-ui/core/Box";
 
 import { makeStyles } from "@material-ui/core";
+
+import Tilt from "react-vanilla-tilt";
 function Realisation({
 	title,
 	icon,
@@ -18,15 +20,24 @@ function Realisation({
 		container: {
 			padding: "70px",
 		},
+
 		card: {
-			width: "18rem",
+			//width: "100px",
+			borderRadius: "10px",
+			border: "4px solid",
+			borderImageSlice: 1,
+			borderImageSource:
+				"linear-gradient(to left, #c2e7d9, #fad02c,#209cee)",
 			[root.breakpoints.down("md")]: {
-				width: "53rem",
+				width: "800px",
 			},
 		},
 		realisationContainer: {
-			border: "1px solid #fad02c",
+			background: "white",
 			borderRadius: "1rem",
+			[root.breakpoints.down("md")]: {
+				width: "800px",
+			},
 		},
 
 		icon: {
@@ -65,6 +76,7 @@ function Realisation({
 		picture: {
 			display: "block",
 			width: "100%",
+			borderRadius: "0.5rem",
 		},
 
 		cardBody: {
@@ -85,9 +97,13 @@ function Realisation({
 		},
 	}));
 	const classes = useStyles();
+	const options = {
+		max: 30,
+		speed: 1000,
+	};
 	return (
 		<section className={classes.container}>
-			<article className={classes.card}>
+			<Tilt options={options} className={classes.card}>
 				<div className={classes.realisationContainer}>
 					<a href={link} target="_blank" rel=" noopener noreferrer">
 						<img
@@ -131,7 +147,7 @@ function Realisation({
 						</p>
 					</div>
 				</div>
-			</article>
+			</Tilt>
 		</section>
 	);
 }

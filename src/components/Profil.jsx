@@ -76,20 +76,20 @@ function Profil() {
 				<div className={classes.profilContainer}>
 					<div className={classes.about}>
 						<h3 className={classes.titleh3}>{t("about.1")}</h3>
-						<p>{t("about.2")}</p>
+						<p className="about">{t("about.2")}</p>
 					</div>
 					<div>
 						<p className={classes.iconContainer}>
 							<a
 								target="_blank"
-								rel=" noopener noreferrer"
+								rel="noopener noreferrer"
 								className={classes.icon}
 								href="https://github.com/TiemaCoulibaly">
 								<i className="fab fa-github"></i>
 							</a>
 							<a
 								target="_blank"
-								rel=" noopener noreferrer"
+								rel="noopener noreferrer"
 								className={classes.icon}
 								href="https://www.linkedin.com/in/tiema-coulibaly/">
 								<i className="fab fa-linkedin"></i>
@@ -98,33 +98,16 @@ function Profil() {
 					</div>
 					<div className={classes.details}>
 						<h3 className={classes.titleh3}>{t("details.1")}</h3>
-						<p>
+						<p className="about">
 							<strong>{t("details.2")} </strong>Coulibaly
 						</p>
-						<p>
+						<p className="about">
 							<strong>{t("details.3")} </strong>Tiema
 						</p>
-						<p>
+						<p className="about">
 							<strong>{t("details.4")} </strong>Paris
 						</p>
 						<br></br>
-
-						{/* <p className={classes.iconContainer}>
-							<a
-								target="_blank"
-								rel=" noopener noreferrer"
-								className={classes.icon}
-								href="https://github.com/TiemaCoulibaly">
-								<i className="fab fa-github"></i>
-							</a>
-							<a
-								target="_blank"
-								rel=" noopener noreferrer"
-								className={classes.icon}
-								href="https://www.linkedin.com/in/tiema-coulibaly-063b94195/">
-								<i className="fab fa-linkedin"></i>
-							</a>
-						</p> */}
 					</div>
 				</div>
 			</section>

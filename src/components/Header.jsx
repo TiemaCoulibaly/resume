@@ -174,14 +174,7 @@ function Header() {
 					<Typical
 						loop={Infinity}
 						wrapper="b"
-						steps={[
-							t("dev.1"),
-							1500,
-							t("dev.2"),
-							1500,
-							t("dev.3"),
-							1500,
-						]}
+						steps={[t("dev.1"), 1500]}
 					/>
 				</h2>
 			</article>

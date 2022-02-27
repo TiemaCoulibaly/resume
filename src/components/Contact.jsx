@@ -21,23 +21,29 @@ function Contact() {
 				fontSize: "70px",
 			},
 		},
-		card: {
+		cardContainer: {
 			width: "500px",
-			backgroundColor: "white",
 			color: "black",
 			borderRadius: "10px",
+			background: "linear-gradient(to right, #c2e7d9, #fad02c,#209cee)",
+			padding: "4px",
 			[root.breakpoints.down("md")]: {
 				width: "53rem",
 			},
 		},
+		card: {
+			backgroundColor: "white",
+			padding: "4px",
+			borderRadius: "10px",
+		},
 		iframe: {
 			borderRadius: "10px",
-			border: "4px solid #fad02c",
-			width: "500px",
+
+			width: "480px",
 			height: "200px",
 			[root.breakpoints.down("md")]: {
 				fontSize: "40px",
-				width: "53rem",
+				width: "51rem",
 				height: "30rem",
 			},
 		},
@@ -63,9 +69,8 @@ function Contact() {
 		<section className={classes.container} id="contact">
 			<h2 className={classes.titleh2}>Contact</h2>
 			<hr className="line mx-auto"></hr>
-
-			<div className={`${classes.card} mx-auto my-5`}>
-				<div alt="Contact">
+			<div className={`${classes.cardContainer} mx-auto my-5`}>
+				<div className={classes.card}>
 					<iframe
 						className={classes.iframe}
 						title="map"
@@ -75,31 +80,32 @@ function Contact() {
 						allowFullScreen=""
 						aria-hidden="false"
 						tabIndex="0"></iframe>
-				</div>
-				<div className="text-center">
-					<div className="card-text">
-						<h5 className={classes.titleh5}>
-							<i
-								className={`${classes.icon} far fa-envelope contact-icon`}></i>{" "}
-							tiema.couly@outlook.com
-						</h5>
-					</div>
-					<div className="card-text">
-						<h5 className={classes.titleh5}>
-							<i
-								className={`${classes.icon} fas fa-mobile-alt contact-icon`}></i>{" "}
-							+336 05 91 67 85
-						</h5>
-					</div>
 
-					<div className={`${classes.btnResume} mx-auto`}>
-						<a
-							target="_blank"
-							rel=" noopener noreferrer"
-							className={`${classes.btnResume} btn btn-outline-primary my-3`}
-							href={t("resume.1")}>
-							{t("resume.2")}
-						</a>
+					<div className="text-center">
+						<div className="card-text">
+							<h5 className={classes.titleh5}>
+								<i
+									className={`${classes.icon} far fa-envelope contact-icon`}></i>{" "}
+								tiema.couly@outlook.com
+							</h5>
+						</div>
+						<div className="card-text">
+							<h5 className={classes.titleh5}>
+								<i
+									className={`${classes.icon} fas fa-mobile-alt contact-icon`}></i>{" "}
+								+336 05 91 67 85
+							</h5>
+						</div>
+
+						<div className={`${classes.btnResume} mx-auto`}>
+							<a
+								target="_blank"
+								rel=" noopener noreferrer"
+								className={`${classes.btnResume} btn btn-outline-primary my-3`}
+								href={t("resume.1")}>
+								{t("resume.2")}
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>

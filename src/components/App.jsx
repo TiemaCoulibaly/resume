@@ -90,12 +90,31 @@ function App() {
 
 				<Profil />
 				<Espaceur />
-				<Bandeau />
+				<Bandeau quote={t("quote.1")} />
 				<Divider />
 				<Espaceur />
-				<Title id="formation" name={t("title.1")} />
+
+				<Title name={t("title.3")} id="realisation" />
 				<Espaceur />
-				<Formation
+
+				<div className={classes.realisation}>
+					{RealisationList.map((realisationItem, key) => {
+						return (
+							<Realisation
+								key={key}
+								title={realisationItem.title}
+								icon={realisationItem.icon}
+								iconF={realisationItem.iconF}
+								iconS={realisationItem.iconS}
+								iconL={realisationItem.iconL}
+								source={realisationItem.source}
+								link={realisationItem.link}
+								github={realisationItem.github}
+							/>
+						);
+					})}
+				</div>
+				{/* <Formation
 					subtitle="Dawan"
 					dateF="Mars 2021 - Juin2021"
 					titleF={t("formation.8")}
@@ -129,32 +148,10 @@ function App() {
 					titleF={t("formation.6")}
 					description={t("formation.7")}
 					link="https://www.lonsdaleinstitute.edu.au/courses/certificate-iv-business/"
-				/>
-				<Espaceur />
+				/> */}
+
 				<Competence />
-				<Espaceur />
-				<Bandeau quote={t("quote.1")} />
-				<Divider />
-				<Espaceur />
-				<Title name={t("title.3")} id="realisation" />
-				<div className={classes.realisation}>
-					{RealisationList.map((realisationItem, key) => {
-						return (
-							<Realisation
-								key={key}
-								title={realisationItem.title}
-								icon={realisationItem.icon}
-								iconF={realisationItem.iconF}
-								iconS={realisationItem.iconS}
-								iconL={realisationItem.iconL}
-								source={realisationItem.source}
-								link={realisationItem.link}
-								github={realisationItem.github}
-							/>
-						);
-					})}
-				</div>
-				<Espaceur />
+
 				<Divider />
 				<Contact />
 				<Footer />

@@ -50,8 +50,11 @@ function Competence() {
 				</div>
 				<div className={classes.iconRow}>
 					<div className={classes.icon}>
-						<i className="fab fa-php ico"></i>
+						<i className="fab fa-wordpress ico"></i>
 					</div>
+					{/* <div className={classes.icon}>
+						<i className="fab fa-php ico"></i>
+					</div> */}
 					<div className={classes.icon}>
 						<i className="fab fa-react ico"></i>
 					</div>
@@ -64,9 +67,7 @@ function Competence() {
 					<div className={classes.icon}>
 						<i className="fab fa-git ico"></i>
 					</div>
-					<div className={classes.icon}>
-						<i className="fab fa-wordpress ico"></i>
-					</div>
+
 					<div className={classes.icon}>
 						<i className="fab fa-bootstrap ico"></i>
 					</div>
