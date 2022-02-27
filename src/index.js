@@ -2,24 +2,18 @@ import React, { Suspense } from "react";
 import ReactDom from "react-dom";
 import App from "./components/App";
 import "./i18n.js";
-import CircularProgress from "@material-ui/core/CircularProgress";
+import { CircularProgress, Box } from "@material-ui/core";
 
 ReactDom.render(
 	<Suspense
 		fallback={
-			<CircularProgress
-				size={100}
-				style={{
-					width: "100%",
-					display: "flex",
-					direction: "column",
-					justifyContent: "center",
-					alignContent: "center",
-					marginTop: "400px",
-					minHeight: "20vh",
-					color: "#209cee",
-				}}
-			/>
+			<Box
+				display="flex"
+				justifyContent="center"
+				alignItems="center"
+				minHeight="100vh">
+				<CircularProgress size={100} />
+			</Box>
 		}>
 		<App />
 	</Suspense>,
