@@ -5,6 +5,7 @@ function Bandeau(props) {
 	const useStyles = makeStyles((root) => ({
 		quote: {
 			padding: "40px",
+			textAlign: "center",
 			[root.breakpoints.down("md")]: {
 				fontSize: "30px",
 				padding: "20px",

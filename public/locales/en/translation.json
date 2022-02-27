@@ -4,9 +4,7 @@
 		"2": "ENGLISH"
 	},
 	"dev": {
-		"1": "Web Developer",
-		"2": "IT Passionate",
-		"3": "Website Creator"
+		"1": "Software Engineer"
 	},
 	"profil": {
 		"1": "About"
@@ -27,7 +25,7 @@
 	},
 	"title": {
 		"1": "Educations",
-		"2": "Languages",
+		"2": "Skills",
 		"3": "Projects"
 	},
 	"readmore": {

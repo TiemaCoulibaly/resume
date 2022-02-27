@@ -4,9 +4,7 @@
 		"2": "ANGLAIS"
 	},
 	"dev": {
-		"1": "Développeur Full stack",
-		"2": "Passionné d'informatique",
-		"3": "Créateur de sites web & web mobile"
+		"1": "Développeur Full stack"
 	},
 	"profil": {
 		"1": "A Propos"
@@ -26,7 +24,7 @@
 	},
 	"title": {
 		"1": "Formation",
-		"2": "Compétence",
+		"2": "Compétences",
 		"3": "Réalisation"
 	},
 	"formation": {
