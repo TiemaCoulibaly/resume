@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Header from "./Header";
 import Profil from "./Profil";
-import Formation from "./Formation";
+// import Formation from "./Formation";
 import Title from "./Title";
 import Competence from "./Competence";
 import Realisation from "./Realisation";
