@@ -25,6 +25,7 @@ import FormControlLabel from "@material-ui/core/FormControlLabel";
 
 import FlareIcon from "@material-ui/icons/Flare";
 import Brightness3Icon from "@material-ui/icons/Brightness3";
+import ScrollToTop from "./ScrollToTop";
 
 function App() {
 	const [darkMode, setDarkMode] = useState(false);
@@ -63,58 +64,62 @@ function App() {
 	}));
 	const classes = useStyles();
 	return (
-		<ThemeProvider theme={theme}>
-			<CssBaseline>
-				<Header />
-				<Divider />
-				<FormControlLabel
-					className={classes.formControl}
-					value="Dark Mode"
-					control={
-						<Switch
-							color="primary"
-							onChange={handleDarkMode}
-							value={darkMode}
-							size="medium"
-						/>
-					}
-					label={
-						darkMode ? (
-							<Brightness3Icon className={classes.dark} />
-						) : (
-							<FlareIcon className={classes.light} />
-						)
-					}
-					labelPlacement="start"
-				/>
+		<>
+			<ThemeProvider theme={theme}>
+				<CssBaseline>
+					<Header />
+					<ScrollToTop />
 
-				<Profil />
-				<Espaceur />
-				<Bandeau quote={t("quote.1")} />
-				<Divider />
-				<Espaceur />
+					<Divider />
 
-				<Title name={t("title.3")} id="realisation" />
-				<Espaceur />
-
-				<div className={classes.realisation}>
-					{RealisationList.map((realisationItem, key) => {
-						return (
-							<Realisation
-								key={key}
-								title={realisationItem.title}
-								icon={realisationItem.icon}
-								iconF={realisationItem.iconF}
-								iconS={realisationItem.iconS}
-								iconL={realisationItem.iconL}
-								source={realisationItem.source}
-								link={realisationItem.link}
-								github={realisationItem.github}
+					<FormControlLabel
+						className={classes.formControl}
+						value="Dark Mode"
+						control={
+							<Switch
+								color="primary"
+								onChange={handleDarkMode}
+								value={darkMode}
+								size="medium"
 							/>
-						);
-					})}
-				</div>
-				{/* <Formation
+						}
+						label={
+							darkMode ? (
+								<Brightness3Icon className={classes.dark} />
+							) : (
+								<FlareIcon className={classes.light} />
+							)
+						}
+						labelPlacement="start"
+					/>
+
+					<Profil />
+					<Espaceur />
+					<Bandeau quote={t("quote.1")} />
+					<Divider />
+					<Espaceur />
+
+					<Title name={t("title.3")} id="realisation" />
+					<Espaceur />
+
+					<div className={classes.realisation}>
+						{RealisationList.map((realisationItem, key) => {
+							return (
+								<Realisation
+									key={key}
+									title={realisationItem.title}
+									icon={realisationItem.icon}
+									iconF={realisationItem.iconF}
+									iconS={realisationItem.iconS}
+									iconL={realisationItem.iconL}
+									source={realisationItem.source}
+									link={realisationItem.link}
+									github={realisationItem.github}
+								/>
+							);
+						})}
+					</div>
+					{/* <Formation
 					subtitle="Dawan"
 					dateF="Mars 2021 - Juin2021"
 					titleF={t("formation.8")}
@@ -150,13 +155,14 @@ function App() {
 					link="https://www.lonsdaleinstitute.edu.au/courses/certificate-iv-business/"
 				/> */}
 
-				<Competence />
+					<Competence />
 
-				<Divider />
-				<Contact />
-				<Footer />
-			</CssBaseline>
-		</ThemeProvider>
+					<Divider />
+					<Contact />
+					<Footer />
+				</CssBaseline>
+			</ThemeProvider>
+		</>
 	);
 }
 
