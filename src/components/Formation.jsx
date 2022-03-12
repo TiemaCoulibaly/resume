@@ -43,7 +43,6 @@ function Formation(props) {
 		},
 	}));
 	const classes = useStyles();
-	console.log("ee", props.description);
 	return (
 		<section className={classes.container}>
 			<div className={classes.left}>
