@@ -33,15 +33,6 @@ export const RealisationList = [
 		github: "https://github.com/TiemaCoulibaly/pomodoro",
 	},
 	{
-		title: "O-city Stade",
-		icon: "fab fa-html5 icon-realisation mx-2",
-		iconF: "fab fa-css3-alt icon-realisation mx-2",
-		iconS: "fab fa-react icon-realisation mx-2",
-		iconL: "fab fa-node icon-realisation mx-2",
-		source: "./images/ocity-screen.png",
-		github: "https://github.com/TiemaCoulibaly/ocity-stade",
-	},
-	{
 		title: "Cryptocurrency App",
 		icon: "fab fa-html5 icon-realisation mx-2",
 		iconF: "fab fa-css3-alt icon-realisation mx-2",
