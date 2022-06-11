@@ -16,10 +16,10 @@ import { makeStyles } from "@material-ui/core";
 import { RealisationList } from "../helpers/RealisationList";
 
 import {
-	ThemeProvider,
-	CssBaseline,
-	createMuiTheme,
-	Switch,
+  ThemeProvider,
+  CssBaseline,
+  createMuiTheme,
+  Switch,
 } from "@material-ui/core";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 
@@ -28,98 +28,98 @@ import Brightness3Icon from "@material-ui/icons/Brightness3";
 import ScrollToTop from "./ScrollToTop";
 
 function App() {
-	const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(false);
 
-	const theme = createMuiTheme({
-		palette: {
-			type: darkMode ? "dark" : "light",
-		},
-	});
-	const handleDarkMode = () => {
-		setDarkMode(!darkMode);
-	};
+  const theme = createMuiTheme({
+    palette: {
+      type: darkMode ? "dark" : "light",
+    },
+  });
+  const handleDarkMode = () => {
+    setDarkMode(!darkMode);
+  };
 
-	const { t } = useTranslation();
-	const useStyles = makeStyles((root) => ({
-		realisation: {
-			display: "flex",
-			flexWrap: "wrap",
-			justifyContent: "center",
-			[root.breakpoints.down("md")]: {
-				display: "block",
-			},
-		},
-		formControl: {
-			display: "flex",
-			justifyContent: "center",
-			margin: "20px",
-		},
+  const { t } = useTranslation();
+  const useStyles = makeStyles((root) => ({
+    realisation: {
+      display: "flex",
+      flexWrap: "wrap",
+      justifyContent: "center",
+      [root.breakpoints.down("md")]: {
+        display: "block",
+      },
+    },
+    formControl: {
+      display: "flex",
+      justifyContent: "center",
+      margin: "20px",
+    },
 
-		light: {
-			color: "#fad02c",
-		},
-		dark: {
-			color: "#209cee",
-		},
-	}));
-	const classes = useStyles();
-	return (
-		<>
-			<ThemeProvider theme={theme}>
-				<CssBaseline>
-					<Header />
-					<ScrollToTop />
+    light: {
+      color: "#fad02c",
+    },
+    dark: {
+      color: "#209cee",
+    },
+  }));
+  const classes = useStyles();
+  return (
+    <>
+      <ThemeProvider theme={theme}>
+        <CssBaseline>
+          <Header />
+          <ScrollToTop />
 
-					<Divider />
+          <Divider />
 
-					<FormControlLabel
-						className={classes.formControl}
-						value="Dark Mode"
-						control={
-							<Switch
-								color="primary"
-								onChange={handleDarkMode}
-								value={darkMode}
-								size="medium"
-							/>
-						}
-						label={
-							darkMode ? (
-								<Brightness3Icon className={classes.dark} />
-							) : (
-								<FlareIcon className={classes.light} />
-							)
-						}
-						labelPlacement="start"
-					/>
+          <FormControlLabel
+            className={classes.formControl}
+            value="Dark Mode"
+            control={
+              <Switch
+                color="primary"
+                onChange={handleDarkMode}
+                value={darkMode}
+                size="medium"
+              />
+            }
+            label={
+              darkMode ? (
+                <Brightness3Icon className={classes.dark} />
+              ) : (
+                <FlareIcon className={classes.light} />
+              )
+            }
+            labelPlacement="start"
+          />
 
-					<Profil />
-					<Espaceur />
-					<Bandeau quote={t("quote.1")} />
-					<Divider />
-					<Espaceur />
+          <Profil />
+          <Espaceur />
+          <Bandeau quote={t("quote.1")} />
+          <Divider />
+          <Espaceur />
 
-					<Title name={t("title.3")} id="realisation" />
-					<Espaceur />
+          <Title name={t("title.3")} id="realisation" />
+          <Espaceur />
 
-					<div className={classes.realisation}>
-						{RealisationList.map((realisationItem, key) => {
-							return (
-								<Realisation
-									key={key}
-									title={realisationItem.title}
-									icon={realisationItem.icon}
-									iconF={realisationItem.iconF}
-									iconS={realisationItem.iconS}
-									iconL={realisationItem.iconL}
-									source={realisationItem.source}
-									link={realisationItem.link}
-									github={realisationItem.github}
-								/>
-							);
-						})}
-					</div>
-					{/* <Formation
+          <div className={classes.realisation}>
+            {RealisationList.map((realisationItem, key) => {
+              return (
+                <Realisation
+                  key={key}
+                  title={realisationItem.title}
+                  icon={realisationItem.icon}
+                  iconF={realisationItem.iconF}
+                  iconS={realisationItem.iconS}
+                  iconL={realisationItem.iconL}
+                  source={realisationItem.source}
+                  link={realisationItem.link}
+                  github={realisationItem.github}
+                />
+              );
+            })}
+          </div>
+          {/* <Formation
 					subtitle="Dawan"
 					dateF="Mars 2021 - Juin2021"
 					titleF={t("formation.8")}
@@ -155,15 +155,15 @@ function App() {
 					link="https://www.lonsdaleinstitute.edu.au/courses/certificate-iv-business/"
 				/> */}
 
-					<Competence />
+          <Competence />
 
-					<Divider />
-					<Contact />
-					<Footer />
-				</CssBaseline>
-			</ThemeProvider>
-		</>
-	);
+          <Divider />
+          <Contact />
+          <Footer />
+        </CssBaseline>
+      </ThemeProvider>
+    </>
+  );
 }
 
 export default App;
